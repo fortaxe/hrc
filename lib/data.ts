@@ -93,3 +93,59 @@ export const styleCards = [
       "Lower cost, high efficiency, and recyclable with reduced pre-spraying time. High spray pass rate with carbon fiber texture and tactile finish.",
   },
 ];
+
+
+export const firstColumn = [
+  {
+      title: "About HRC",
+      link: "/about"
+  },
+  {
+      title: "Services",
+      link: "/services"
+  },
+  {
+      title: "Markets",
+      link: "/markets"
+  }
+]
+
+export const secondColumn = [
+  {
+      title: "Sustainability",
+      link: "/sustainability"
+  },
+  
+  {
+      title: "News",
+      link: "/news"
+  },
+  {
+      title: "Contact Us",
+      link: "/contact"
+  }
+]
+
+export const socialMedia = [
+  {
+     
+      link: "/linkedin",
+      src: "/social/linkedin.svg"
+  },
+  
+  {
+     
+      link: "/facebook",
+      src: "/social/facebook.svg"
+  },
+  {
+ 
+      link: "/instagram",
+      src: "/social/insta.svg"
+  },
+  {
+  
+      link: "/youtube",
+      src: "/social/youtube.svg"
+  }
+]

@@ -4,8 +4,9 @@ import "./globals.css";
 import ReactLenis from "lenis/react";
 import { ViewTransitions } from "next-view-transitions";
 import Script from "next/script";
+import Footer from "@/components/ui/footer";
 
-// import { Toaster } from "sonner";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -78,11 +79,12 @@ export default function RootLayout({
         }}
       />
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${instrumentSerifItalic.variable}  antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${instrumentSerifItalic.variable}  antialiased bg-black`}
       >
        <ViewTransitions>
        <ReactLenis root>
           {children}
+          <Footer />
           </ReactLenis>
           </ViewTransitions>
        

@@ -7,82 +7,7 @@ import { SmartCardProps } from "@/lib/types";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
-export const SustainableCompleteCard = () => {
-    const sectionRef = useRef<HTMLDivElement>(null);
-  
-    const { scrollYProgress } = useScroll({
-      target: sectionRef,
-      offset: ["start start", "end start"]
-    });
-  
-    return (
-      <div
-        ref={sectionRef}
-        id="sustainable"
-        className="relative"
-        style={{ height: `${smartCards.length * 100}vh` }}
-      >
-        <section className="w-full h-screen sticky top-0 overflow-hidden bg-black">
-          <div className="w-full mx-auto max-w-[1440px] px-[30px] h-full flex flex-col">
-            <motion.div
-              className="py-[50px]"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
-              viewport={{ once: true, margin: "-100px" }}
-            >
-              <h2 className="text-[64px] leading-[64px] text-white pb-[50px]">
-                Sustainable Ecosystem Solutions
-              </h2>
-            </motion.div>
-  
-            <div className="relative flex-1 perspective-1000">
-              {smartCards.map((card: SmartCardProps, i: number) => {
-                const cardStart = i / smartCards.length;
-                const cardEnd = (i + 1) / smartCards.length;
-  
-                // Transform for stacking effect - cards slide up and stay in place
-                const y = useTransform(
-                  scrollYProgress,
-                  [cardStart - 0.1, cardStart, cardEnd],
-                  ["100%", "0%", "0%"]
-                );
-  
-                return (
-                  <motion.div
-                    key={i}
-                    className="absolute inset-0 bg-[#0E0E0E] p-[30px] rounded-[15px] flex flex-row gap-[30px] shadow-xl"
-                    style={{
-                      zIndex: i + 1, // Later cards have higher z-index so they slide over previous ones
-                      y,
-                    }}
-                    whileHover={{
-                      transition: { duration: 0.2 }
-                    }}
-                  >
-                    <div className="w-[50%] flex">
-                      <TextCard
-                        heading={card.heading}
-                        description={card.description}
-                        secondHeading={card.secondHeading}
-                        secondDescription={card.secondDescription}
-                        thirdHeading={card.thirdHeading}
-                        thirdDescription={card.thirdDescription}
-                      />
-                    </div>
-                    <div className="w-[50%] flex">
-                      <ImageCard image="/smart/1.png" />
-                    </div>
-                  </motion.div>
-                );
-              })}
-            </div>
-          </div>
-        </section>
-      </div>
-    );
-  };
-  
+
 
   export const SmartCard = () => {
     const sectionRef = useRef<HTMLDivElement>(null);
@@ -100,16 +25,16 @@ export const SustainableCompleteCard = () => {
         style={{ height: `${smartCards.length * 100}vh` }}
       >
         <section className="w-full h-screen sticky top-0 overflow-hidden bg-black">
-          <div className="w-full mx-auto max-w-[1440px] px-[30px] h-full flex flex-col">
+          <div className="w-full mx-auto max-w-[1440px] px-4 sm:px-[30px] h-full flex flex-col">
             <motion.div
-              className="py-[50px]"
+              className="py-[30px] sm:py-[50px]"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
               viewport={{ once: true, margin: "-100px" }}
             >
-              <h2 className="text-[64px] leading-[64px] text-white pb-[50px]">
-                Smart Innovations in Lightweighting
+              <h2 className="text-[30px] md:text-[64px] leading-[34px] sm:leading-[64px] text-white pb-0 sm:pb-[50px]">
+               <span className="text-[#E1251B]">Smart</span> Innovations in Lightweighting
               </h2>
             </motion.div>
   
@@ -127,16 +52,16 @@ export const SustainableCompleteCard = () => {
                 return (
                   <motion.div
                     key={i}
-                    className="absolute inset-0 bg-[#0E0E0E] p-[30px] rounded-[15px] flex flex-row gap-[30px] shadow-xl"
+                    className="absolute inset-0 bg-[#0E0E0E] p-4 sm:p-[30px] rounded-[10px] sm:rounded-[15px] flex flex-col lg:flex-row gap-4 sm:gap-[30px] min-h-full overflow-y-auto lg:overflow-hidden"
                     style={{
                       zIndex: i + 1,
                       y,
                     }}
                   >
-                    <div className="w-[50%] flex">
+                    <div className="w-full lg:w-[50%] flex">
                       <TextCard {...card} />
                     </div>
-                    <div className="w-[50%] flex">
+                    <div className="w-full lg:w-[50%] flex">
                       <ImageCard image="/smart/1.png" />
                     </div>
                   </motion.div>

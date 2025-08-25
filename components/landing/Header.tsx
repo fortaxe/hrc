@@ -1,9 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-
 import { useEffect } from "react";
-
 import { usePathname, useRouter } from "next/navigation";
 
 const Header = () => {
@@ -40,8 +38,8 @@ const Header = () => {
   };
 
   return (
-    <header className="relative">
-      <nav className="py-4 sm:py-[25px] border-gray-200 relative z-50">
+    <header className="relative ">
+      <nav className="pt-[25px] sm:pt-[30px] border-gray-200 relative z-50">
         <div className="flex w-full max-w-[1440px] flex-wrap items-center justify-start  mx-auto px-4 md:px-[30px]">
           {/* Mobile layout: Hamburger (left) + Logo (center) */}
           <div className="md:hidden flex items-center justify-between w-full">

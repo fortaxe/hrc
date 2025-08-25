@@ -141,3 +141,10 @@
   letter-spacing: 0;
   color: #BCBCBC;
 }
+
+@media (max-width: 768px) {
+  .description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

@@ -6,7 +6,10 @@ import Header from "./Header";
 
 export function Hero() {
   return (
-    <div data-hero className="min-h-screen w-full bg-black relative flex flex-col">
+    <div
+      data-hero
+      className="min-h-screen w-full bg-black relative flex flex-col"
+    >
       {/* Crimson Core Glow */}
       <div
         className="absolute inset-0 z-0"
@@ -25,52 +28,56 @@ export function Hero() {
         }}
       />
       {/* Header */}
-      <div className="relative">
+      <div className="relative z-10">
         <Header />
       </div>
 
       {/* Hero Content */}
-      <div className="flex flex-1 justify-center items-center relative px-4 md:px-[30px] max-w-[1440px] mx-auto w-full">
-        <motion.div
-          initial={{ opacity: 0.0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{
-            delay: 0.3,
-            duration: 0.8,
-            ease: "easeInOut",
-          }}
-          className="flex flex-col gap-4 max-w-[1440px] w-full  text-left"
-        >
-            <div className="flex justify-between items-end">
-                <div>
-            <p className="text-[59px] md:text-[120px] xl:text-[230px] leading-[1]  tracking-[-0.03em] text-[#E1251B] -ml-[3px] md:-ml-2 xl:-ml-3 text-left">
-          HRC {" "}
-          <span className="font-instrument-italic text-white leading-[1]">
-          at
-          </span>
-          </p>
-          </div>
-          <div>
-            <p className=" xl:text-[36px] leading-[1] md:leading-[1] font-instrument-italic  tracking-[0] text-white   text-right ">
-            Hall B2, Booth E12
-            </p>
-          </div>
-         
+      <div className=" pt-[65px] sm:pt-[70px] ">
+        <div className="flex flex-1 justify-center items-center relative  max-w-[1440px] mx-auto w-full">
+          <motion.div
+            initial={{ opacity: 0.0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.3,
+              duration: 0.8,
+              ease: "easeInOut",
+            }}
+            className="flex flex-col gap-4 max-w-[1440px] w-full  text-left px-[16px] sm:px-[30px]"
+          >
+            <div className="flex justify-between items-end ">
+              <div>
+                <p className=" block sm:hidden text-[22px] leading-[0.46] tracking-[0] text-white pb-[130px] text-center">
+                  Hall B2, Booth E12
+                </p>
+                <p className="text-[148px] md:text-[120px] xl:text-[230px] leading-[1]  tracking-[-0.03em] text-[#E1251B] -ml-[3px] md:-ml-2 xl:-ml-3 text-left">
+                  HRC{" "}
+                  <span className="font-instrument-italic text-white leading-[1] text-[57px] md:text-[120px] xl:text-[230px]">
+                    at
+                  </span>
+                </p>
+              </div>
+              <div>
+                <p className=" xl:text-[36px] leading-[1] md:leading-[1] font-instrument-italic  tracking-[0] text-white   text-right ">
+                  Hall B2, Booth E12
+                </p>
+              </div>
             </div>
-            <p className="text-[59px] md:text-[120px] xl:text-[230px] leading-[1]  tracking-[-0.03em] text-white -ml-[3px] md:-ml-2 xl:-ml-3 text-left uppercase">
-          IAA MOBILITY
-          </p>
-          <div>
-            <div className="flex justify-between">
-          <p className=" xl:text-[36px] leading-[1] md:leading-[1] font-instrument-italic  tracking-[0] text-white   text-left ">
-          Press Day : 8 September 2025 
+            <p className="text-[57px] md:text-[120px] xl:text-[230px] leading-[1]  tracking-[-0.03em] text-white -ml-[3px] md:-ml-2 xl:-ml-3 text-left uppercase">
+              IAA MOBILITY
             </p>
-            <p className=" xl:text-[36px] leading-[1] md:leading-[1] font-instrument-italic  tracking-[0] text-white   text-right ">
-            Industry Days :9-12 September 2025             </p>
+            <div>
+              <div className="flex justify-between">
+                <p className=" xl:text-[36px] leading-[1] md:leading-[1] font-instrument-italic  tracking-[0] text-white   text-left ">
+                  Press Day : 8 September 2025
+                </p>
+                <p className=" xl:text-[36px] leading-[1] md:leading-[1] font-instrument-italic  tracking-[0] text-white   text-right ">
+                  Industry Days :9-12 September 2025{" "}
+                </p>
+              </div>
             </div>
-          </div>
-         
-        </motion.div>
+          </motion.div>
+        </div>
       </div>
     </div>
   );
