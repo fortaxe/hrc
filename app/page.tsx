@@ -2,16 +2,17 @@
 import { Hero } from "@/components/landing/hero";
 import StickyNav from "@/components/ui/sticky-nav";
 import { SustainableCompleteCard, SmartCard, StyleCompleteCard } from "@/components/landing/complete-card";
-
+import SustainableFirst from "@/components/landing/sustainable-first";
 
 export default function Home() {
   return (
     <div className="bg-black">
       <Hero />
-      <StickyNav />
-      <div className="bg-black">
+      {/* <StickyNav /> */}
+      <SustainableFirst />
+      {/* <div className="bg-black">
         <div id="sustainable">
-          <SustainableCompleteCard />
+       
         </div>
         <div id="smart">
           <SmartCard />
@@ -19,7 +20,7 @@ export default function Home() {
         <div id="stylish">
           <StyleCompleteCard />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

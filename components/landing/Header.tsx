@@ -14,9 +14,9 @@ const Header = () => {
   const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
 
   const navItems = [
-    { label: "Sustainable", href: "/#sustainable", id: "/01" },
-    { label: "Smart", href: "/#smart", id: "/02" },
-    { label: "Stylish", href: "/#stylish", id: "/03" },
+    { label: "Sustainable", href: "/sustainable", id: "/01" },
+    { label: "Smart", href: "/smart", id: "/02" },
+    { label: "Stylish", href: "/stylish", id: "/03" },
     { label: "Munich, Germany", href: "/", id: "/04" },
   ];
 
