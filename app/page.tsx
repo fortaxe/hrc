@@ -10,9 +10,15 @@ export default function Home() {
       <Hero />
       <StickyNav />
       <div className="bg-black">
-        <SustainableCompleteCard />
-        <SmartCard />
-        <StyleCompleteCard />
+        <div id="sustainable">
+          <SustainableCompleteCard />
+        </div>
+        <div id="smart">
+          <SmartCard />
+        </div>
+        <div id="stylish">
+          <StyleCompleteCard />
+        </div>
       </div>
     </div>
   );
