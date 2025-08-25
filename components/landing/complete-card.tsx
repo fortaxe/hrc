@@ -5,18 +5,70 @@ import ImageCard from "./image-card";
 import { smartCards ,styleCards} from "@/lib/data";
 import { SmartCardProps } from "@/lib/types";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
-
-
+import { useRef, useState, useEffect } from "react";
 
   export const SmartCard = () => {
+    const [isMobile, setIsMobile] = useState(false);
     const sectionRef = useRef<HTMLDivElement>(null);
   
+    useEffect(() => {
+      const checkMobile = () => {
+        setIsMobile(window.innerWidth < 640); // 640px is the sm breakpoint
+      };
+      
+      checkMobile();
+      window.addEventListener('resize', checkMobile);
+      
+      return () => window.removeEventListener('resize', checkMobile);
+    }, []);
+
     const { scrollYProgress } = useScroll({
       target: sectionRef,
       offset: ["start start", "end start"]
     });
+
+    // Pre-calculate all transforms to ensure consistent hook calls
+    const transforms = smartCards.map((_, i) => {
+      const cardStart = i / smartCards.length;
+      const cardEnd = (i + 1) / smartCards.length;
+      
+      return useTransform(
+        scrollYProgress,
+        [cardStart - 0.1, cardStart, cardEnd],
+        ["100%", "0%", "0%"]
+      );
+    });
   
+    if (isMobile) {
+      return (
+        <div id="smart" className="w-full bg-black">
+          <div className="w-full mx-auto max-w-[1440px] px-4">
+            <div className="py-[30px]">
+              <h2 className="text-[30px] leading-[34px] text-white">
+                <span className="text-[#E1251B]">Smart</span> Innovations in Lightweighting
+              </h2>
+            </div>
+  
+            <div className="space-y-6 pb-[30px]">
+              {smartCards.map((card: SmartCardProps, i: number) => (
+                <motion.div
+                 className="bg-[#0E0E0E] p-4 rounded-[10px] flex flex-col gap-4 "
+              
+                >
+                  <div className="flex ">
+                    <TextCard {...card} />
+                  </div>
+                  <div className="flex">
+                    <ImageCard image={card.img} />
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </div>
+      );
+    }
+
     return (
       <div
         ref={sectionRef}
@@ -24,7 +76,7 @@ import { useRef } from "react";
         className="relative"
         style={{ height: `${smartCards.length * 100}vh` }}
       >
-        <section className="w-full h-screen sticky top-0 overflow-hidden bg-black">
+        <section className="w-full h-screen sticky top-0 overflow-hidden bg-black sm:mb-[50px]">
           <div className="w-full mx-auto max-w-[1440px] px-4 sm:px-[30px] h-full flex flex-col">
             <motion.div
               className="py-[30px] sm:py-[50px]"
@@ -33,36 +85,27 @@ import { useRef } from "react";
               transition={{ duration: 0.8, ease: "easeOut" }}
               viewport={{ once: true, margin: "-100px" }}
             >
-              <h2 className="text-[30px] md:text-[64px] leading-[34px] sm:leading-[64px] text-white pb-0 sm:pb-[50px]">
+              <h2 className="text-[30px] md:text-[64px] leading-[34px] sm:leading-[64px] text-white ">
                <span className="text-[#E1251B]">Smart</span> Innovations in Lightweighting
               </h2>
             </motion.div>
   
             <div className="relative flex-1 perspective-1000">
               {smartCards.map((card: SmartCardProps, i: number) => {
-                const cardStart = i / smartCards.length;
-                const cardEnd = (i + 1) / smartCards.length;
-  
-                const y = useTransform(
-                  scrollYProgress,
-                  [cardStart - 0.1, cardStart, cardEnd],
-                  ["100%", "0%", "0%"]
-                );
-  
                 return (
                   <motion.div
                     key={i}
-                    className="absolute inset-0 bg-[#0E0E0E] p-4 sm:p-[30px] rounded-[10px] sm:rounded-[15px] flex flex-col lg:flex-row gap-4 sm:gap-[30px] min-h-full overflow-y-auto lg:overflow-hidden"
+                    className="absolute inset-0 bg-[#0E0E0E] p-4 sm:p-[30px] rounded-[10px] sm:rounded-[15px] flex flex-col lg:flex-row gap-4 sm:gap-[30px]"
                     style={{
                       zIndex: i + 1,
-                      y,
+                      y: transforms[i],
                     }}
                   >
-                    <div className="w-full lg:w-[50%] flex">
+                    <div className="lg:w-[50%] flex">
                       <TextCard {...card} />
                     </div>
-                    <div className="w-full lg:w-[50%] flex">
-                      <ImageCard image="/smart/1.png" />
+                    <div className="lg:w-[50%] flex">
+                      <ImageCard image={card.img} />
                     </div>
                   </motion.div>
                 );
@@ -76,13 +119,67 @@ import { useRef } from "react";
 
   
   export const StyleCompleteCard = () => {
+    const [isMobile, setIsMobile] = useState(false);
     const sectionRef = useRef<HTMLDivElement>(null);
   
+    useEffect(() => {
+      const checkMobile = () => {
+        setIsMobile(window.innerWidth < 640); // 640px is the sm breakpoint
+      };
+      
+      checkMobile();
+      window.addEventListener('resize', checkMobile);
+      
+      return () => window.removeEventListener('resize', checkMobile);
+    }, []);
+
     const { scrollYProgress } = useScroll({
       target: sectionRef,
       offset: ["start start", "end start"]
     });
+
+    // Pre-calculate all transforms to ensure consistent hook calls
+    const transforms = styleCards.map((_, i) => {
+      const cardStart = i / styleCards.length;
+      const cardEnd = (i + 1) / styleCards.length;
+      
+      return useTransform(
+        scrollYProgress,
+        [cardStart - 0.1, cardStart, cardEnd],
+        ["100%", "0%", "0%"]
+      );
+    });
   
+    if (isMobile) {
+      return (
+        <div id="smart" className="w-full bg-black">
+          <div className="w-full mx-auto max-w-[1440px] px-4">
+            <div className="py-[30px]">
+              <h2 className="text-[30px] leading-[34px] text-white">
+                <span className="text-[#E1251B]">Stylish</span> Composites Excellence
+              </h2>
+            </div>
+  
+            <div className="space-y-6 pb-[30px]">
+              {styleCards.map((card: SmartCardProps, i: number) => (
+                <motion.div
+                 className="bg-[#0E0E0E] p-4 rounded-[10px] flex flex-col gap-4"
+              
+                >
+                  <div className="flex">
+                    <TextCard {...card} />
+                  </div>
+                  <div className="flex">
+                    <ImageCard image={card.img} />
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </div>
+      );
+    }
+
     return (
       <div
         ref={sectionRef}
@@ -90,46 +187,36 @@ import { useRef } from "react";
         className="relative"
         style={{ height: `${styleCards.length * 100}vh` }}
       >
-        <section className="w-full h-screen sticky top-0 overflow-hidden bg-black">
-          <div className="w-full mx-auto max-w-[1440px] px-[30px] h-full flex flex-col">
+        <section className="w-full h-screen sticky top-0 overflow-hidden bg-black sm:mb-[50px]">
+          <div className="w-full mx-auto max-w-[1440px] px-4 sm:px-[30px] h-full flex flex-col">
             <motion.div
-              className="py-[50px]"
+              className="py-[30px] sm:py-[50px]"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
               viewport={{ once: true, margin: "-100px" }}
             >
-              <h2 className="text-[64px] leading-[64px] text-white pb-[50px]">
-                Stylish Composites Excellence
+              <h2 className="text-[30px] md:text-[64px] leading-[34px] sm:leading-[64px] text-white ">
+               <span className="text-[#E1251B]">Stylish</span> Composites Excellence
               </h2>
             </motion.div>
   
             <div className="relative flex-1 perspective-1000">
               {styleCards.map((card: SmartCardProps, i: number) => {
-                const cardStart = i / styleCards.length;
-                const cardEnd = (i + 1) / styleCards.length;
-  
-                const y = useTransform(
-                  scrollYProgress,
-                  [cardStart - 0.1, cardStart, cardEnd],
-                  ["100%", "0%", "0%"]
-                );
-  
                 return (
                   <motion.div
                     key={i}
-                    className="absolute inset-0 bg-[#0E0E0E] p-[30px] rounded-[15px] flex flex-row gap-[30px] shadow-xl"
+                    className="absolute inset-0 bg-[#0E0E0E] p-4 sm:p-[30px] rounded-[10px] sm:rounded-[15px] flex flex-col lg:flex-row gap-4 sm:gap-[30px]"
                     style={{
                       zIndex: i + 1,
-                      y,
+                      y: transforms[i],
                     }}
                   >
-                    <div className="w-[50%] flex">
+                    <div className="lg:w-[50%] flex">
                       <TextCard {...card} />
                     </div>
-                    <div className="w-[50%] flex">
-                      {/* same image for all */}
-                      <ImageCard image="/smart/1.png" />
+                    <div className="lg:w-[50%] flex">
+                      <ImageCard image={card.img} />
                     </div>
                   </motion.div>
                 );
@@ -141,87 +228,6 @@ import { useRef } from "react";
     );
   };
   
-
-// export const StyleCompleteCard = () => {
-//     const sectionRef = useRef<HTMLDivElement>(null);
-
-//     const { scrollYProgress } = useScroll({
-//       target: sectionRef,
-//       offset: ["start start", "end start"]
-//     });
-
-//     return (
-//         <div 
-//           ref={sectionRef} 
-//           id="stylish"
-//           className="relative" 
-//           style={{ height: `${styleCards.length * 100}vh` }}
-//         >
-//           <section className="w-full h-screen sticky top-0 overflow-hidden bg-black">
-//             <div className="w-full mx-auto max-w-[1440px] px-[30px] h-full flex flex-col">
-//               <motion.div
-//                 className="py-[50px]"
-//                 initial={{ opacity: 0, y: 30 }}
-//                 whileInView={{ opacity: 1, y: 0 }}
-//                 transition={{ duration: 0.8, ease: "easeOut" }}
-//                 viewport={{ once: true, margin: "-100px" }}
-//               >
-//                 <h2 className="text-[64px] leading-[64px] text-white pb-[50px]">
-//                   Stylish Composites Excellence
-//                 </h2>
-//               </motion.div>
-        
-//               <div className="relative flex-1 perspective-1000">
-//                 {styleCards.map((card: SmartCardProps, i: number) => {
-//                   const cardStart = i / styleCards.length;
-//                   const cardEnd = (i + 1) / styleCards.length;
-                  
-//                   const opacity = useTransform(
-//                     scrollYProgress,
-//                     [cardStart - 0.1, cardStart, cardEnd, cardEnd + 0.1],
-//                     [1, 1, 1, 0]
-//                   );
-                  
-                 
-                  
-//                   return (
-//                     <motion.div
-//                       key={i}
-//                       className="absolute inset-0 bg-[#0E0E0E] p-[30px] rounded-[15px] flex flex-row gap-[30px] shadow-xl"
-//                       style={{
-//                         zIndex: i + 1,
-//                         opacity,
-                        
-//                       }}
-//                       whileHover={{ 
-                       
-//                         transition: { duration: 0.2 } 
-//                       }}
-//                     >
-//                       <div className="w-[50%] flex">
-//                         <TextCard
-//                           heading={card.heading}
-//                           description={card.description}
-//                           secondHeading={card.secondHeading}
-//                           secondDescription={card.secondDescription}
-//                           thirdHeading={card.thirdHeading}
-//                           thirdDescription={card.thirdDescription}
-//                         />
-//                       </div>
-//                       <div className="w-[50%] flex">
-//                         {/* same image for all */}
-//                         <ImageCard image="/smart/1.png" />
-//                       </div>
-//                     </motion.div>
-//                   );
-//                 })}
-//               </div>
-//             </div>
-//           </section>
-//         </div>
-//       );
-// }
-
 
 
 

@@ -10,18 +10,23 @@ export interface ImageCardProps {
 
 export interface TextCardProps {
     heading: string;
-    description: string;
+    description?: string;
     secondHeading: string;
     secondDescription: string;
     thirdHeading: string;
     thirdDescription: string;
+    firstHeading?: string;
+    firstDescription?: string;
 }
 
 export interface SmartCardProps {
     heading: string;
-    description: string;
+    description?: string;
+    firstHeading?: string;
+    firstDescription?: string;
     secondHeading: string;
     secondDescription: string;
     thirdHeading: string;
     thirdDescription: string;
-}
+    img: string;
+        }

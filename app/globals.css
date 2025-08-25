@@ -147,4 +147,9 @@
     font-size: 14px;
     line-height: 20px;
   }
+
+
+  .card-heading {
+    font-size: 20px;
+  }
 }
