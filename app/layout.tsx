@@ -26,9 +26,8 @@ const instrumentSerifItalic = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "Best Digital Marketing, SEO, Web & App Dev, AI Integration",
-  description:
-    "Top Digital Marketing, SEO, Web & App Dev, AI Integration – Boost Your Online Presence & Drive More Traffic with Our Expert Services for Your Business",
+  title: "HRC",
+  
 };
 
 export default function RootLayout({
