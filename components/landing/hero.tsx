@@ -62,7 +62,7 @@ export function Hero() {
               </p>
             </div>
           </div>
-          <p className="text-[57px] md:text-[120px] xl:text-[230px] leading-[42px] md:leading-[170px]  tracking-[-0.03em] text-white  text-left uppercase md:-ml-[21px]">
+          <p className="text-[55px] mobile:text-[57px] md:text-[120px] xl:text-[230px] leading-[42px] md:leading-[170px]  tracking-[-0.03em] text-white  text-left uppercase md:-ml-[21px]">
             IAA MOBILITY
           </p>
           <div>
