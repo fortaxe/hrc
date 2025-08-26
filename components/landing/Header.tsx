@@ -52,6 +52,7 @@ const Header = () => {
           <div className="md:hidden flex items-center justify-between w-full">
             <div>
             <img 
+            onClick={() => router.push("/")}
             src="/logo.svg"
             alt="logo"
             className="w-[91px] h-[40px] text-white cursor-pointer "
