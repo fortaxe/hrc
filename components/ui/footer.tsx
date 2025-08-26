@@ -45,9 +45,9 @@ const Footer = () => {
             <div className="flex space-x-4">
               {socialMedia.map((item) => (
                 <Link 
-                className="text-[#F6F6EB] description hover:text-white transition-colors bg-[#4C4B4B] p-[12px] rounded-full"
+                className=""
               href={item.link} >
-                <img src={item.src} alt="social" className="sm:w-[15px] w-[18px]  h-[15px] sm:h-[18px] " />
+                <img src={item.src} alt="social"  />
               </Link>
               ))}
             </div>
@@ -63,8 +63,8 @@ const Footer = () => {
       <div className="border-t border-[#4C4B4B] hidden sm:block"></div>
 
       {/* Lower Section - Copyright */}
-      <div className="pb-[45px] sm:pb-0 container sm:px-[30px] px-4 sm:py-4 max-w-[1440px] mx-auto">
-        <div className="description text-[#F6F6EB]!">
+      <div className="pb-[45px] sm:pb-0 container sm:px-[30px] px-4  max-w-[1440px] mx-auto">
+        <div className="text-[14px] leading-[1] tracking-[0em] text-[#F6F6EB]! sm:py-4">
           Copyright © 2025 HRC All Rights Reserved
         </div>
       </div>

@@ -30,22 +30,7 @@ export const SustainableAnimated = () => {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start start", "end start"]
-  });
 
-  // Pre-calculate all transforms to ensure consistent hook calls
-  const transforms = sustainableComponents.map((_, i) => {
-    const cardStart = i / sustainableComponents.length;
-    const cardEnd = (i + 1) / sustainableComponents.length;
-    
-    return useTransform(
-      scrollYProgress,
-      [cardStart - 0.1, cardStart, cardEnd],
-      ["100%", "0%", "0%"]
-    );
-  });
 
   if (isMobile) {
     return (
@@ -64,34 +49,16 @@ export const SustainableAnimated = () => {
   }
 
   return (
-    <div
-      ref={sectionRef}
-      id="sustainable"
-      className="relative"
-      style={{ height: `${sustainableComponents.length * 100}vh` }}
-    >
-      <section className="w-full h-screen sticky top-0 overflow-hidden bg-black sm:mb-[50px]">
-        <div className="w-full mx-auto max-w-[1440px] px-4 sm:px-[30px] h-full flex flex-col">
-          <div className="relative flex-1 perspective-1000">
-            {sustainableComponents.map(({ component: Component, id }, i) => {
-              return (
-                <motion.div
-                  key={id}
-                  className="absolute inset-0 flex items-center justify-center"
-                  style={{
-                    zIndex: i + 1,
-                    y: transforms[i],
-                  }}
-                >
-                  <div className="w-full">
-                    <Component />
-                  </div>
-                </motion.div>
-              );
-            })}
-          </div>
+    <div id="sustainable" className="w-full bg-black">
+      <div className="w-full mx-auto max-w-[1440px] px-4 sm:px-[30px]">
+        <div className="space-y-6 ">
+          {sustainableComponents.map(({ component: Component, id }, i) => (
+            <div key={id} className="w-full">
+              <Component />
+            </div>
+          ))}
         </div>
-      </section>
+      </div>
     </div>
   );
 };

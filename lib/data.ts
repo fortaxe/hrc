@@ -133,7 +133,7 @@ export const firstColumn = [
 export const secondColumn = [
   {
       title: "Sustainability",
-      link: "/sustainability"
+      link: "/sustainable"
   },
   
   {
@@ -142,7 +142,7 @@ export const secondColumn = [
   },
   {
       title: "Contact Us",
-      link: "/contact"
+      link: "/#contact"
   }
 ]
 

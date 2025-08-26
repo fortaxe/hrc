@@ -179,7 +179,7 @@ const ContactUs = () => {
                     }
                   })}
                   rows={4}
-                  className={`w-full bg-[#181818] h-[90px]  rounded-[5px] text-white focus:outline-none transition-colors resize-vertical px-4 py-2${
+                  className={`w-full bg-[#181818] h-[90px]  rounded-[5px] text-white focus:outline-none transition-colors resize-vertical px-4 py-2 ${
                     errors.subject ? 'border-red-500 focus:border-red-500' : 'border-[#333] focus:border-[#E1251B]'
                   }`}
                  

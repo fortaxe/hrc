@@ -47,7 +47,7 @@ export function Hero() {
           >
             <div className="flex justify-between items-end ">
               <div>
-                <p className=" block sm:hidden text-[22px] leading-[0.46] tracking-[0] text-white pb-[130px] text-center">
+                <p className="font-instrument-italic block sm:hidden text-[22px] leading-[0.46] tracking-[0] text-white pb-[130px] text-center">
                   Hall B2, Booth E12
                 </p>
                 <p className="text-[135px] md:text-[120px] xl:text-[230px] leading-[1]  tracking-[-0.03em] text-[#E1251B] -ml-[3px] md:-ml-2 xl:-ml-3 text-left">
@@ -68,10 +68,10 @@ export function Hero() {
             </p>
             <div>
               <div className="flex items-center flex-col sm:flex-row sm:justify-between gap-5 sm:gap-0 mt-[130px] sm:mt-0">
-                <p className=" xl:text-[36px] leading-[1] md:leading-[1] font-instrument-italic  tracking-[0] text-white   text-left ">
+                <p className="text-[22px] xl:text-[36px] leading-[1] md:leading-[1] font-instrument-italic  tracking-[0] text-white   text-left ">
                   Press Day : 8 September 2025
                 </p>
-                <p className=" xl:text-[36px] leading-[1] md:leading-[1] font-instrument-italic  tracking-[0] text-white   text-right ">
+                <p className="text-[22px]  xl:text-[36px] leading-[1] md:leading-[1] font-instrument-italic  tracking-[0] text-white   text-right ">
                   Industry Days :9-12 September 2025{" "}
                 </p>
               </div>

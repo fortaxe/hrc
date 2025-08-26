@@ -5,7 +5,9 @@ export default function Home() {
   return (
     <div className="bg-black">
       <Hero />
-      <ContactUs />
+      <div id="contact">
+        <ContactUs />
+      </div>
     </div>
   );
 }
