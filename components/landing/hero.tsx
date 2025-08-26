@@ -8,7 +8,7 @@ export function Hero() {
   return (
     <div
       data-hero
-      className="h-[800px] sm:h-[850px] w-full bg-black relative flex flex-col"
+      className="h-[800px] sm:h-screen w-full bg-black relative flex flex-col"
     >
       {/* Crimson Core Glow */}
       <div
