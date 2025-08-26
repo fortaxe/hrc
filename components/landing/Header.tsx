@@ -126,7 +126,7 @@ const Header = () => {
               </button>
             </div>
 
-            <div className="pt-[70px]">
+            <div className="pt-[50px]">
               <img
                 src="/logo.svg"
                 alt="logo"
@@ -134,7 +134,7 @@ const Header = () => {
               />
             </div>
             {/* Content Wrapper */}
-            <div className="flex flex-col  pt-[70px]">
+            <div className="flex flex-col  pt-[50px]">
               {/* Navigation Menu */}
               <div className="">
                 <ul className=" ">
@@ -153,14 +153,7 @@ const Header = () => {
               </div>
             </div>
 
-            {/* 
-              The reason the dates and "Munich, Germany" are bottom-aligned is because
-              the parent container uses "flex flex-col flex-1", and this block is after the flex-1 grow block.
-              So it will always be pushed to the bottom of the sidebar, regardless of mt-[70px].
-              mt-[70px] just adds margin-top, but the flex-1 above takes all available space, pushing this block down.
-              If you want this block to not be bottom-aligned, remove flex-1 from the above div.
-            */}
-            <div className="flex items-start flex-col sm:flex-row sm:justify-between gap-5 sm:gap-0 mt-[70px] sm:mt-0">
+            <div className="flex items-start flex-col sm:flex-row sm:justify-between gap-5 sm:gap-0 mt-[50px] sm:mt-0">
               <p className="text-[22px]  leading-[1] md:leading-[1] font-instrument-italic  tracking-[0] text-white   text-left ">
                 Munich, Germany
               </p>
