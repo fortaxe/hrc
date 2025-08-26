@@ -104,7 +104,7 @@ import { useRef, useState, useEffect } from "react";
                     <div className="lg:w-[50%] flex">
                       <TextCard {...card} />
                     </div>
-                    <div className=" flex">
+                    <div className="lg:w-[50%] flex">
                       <ImageCard image={card.img} />
                     </div>
                   </motion.div>
