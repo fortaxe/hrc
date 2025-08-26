@@ -13,7 +13,7 @@ import { useRef, useState, useEffect } from "react";
   
     useEffect(() => {
       const checkMobile = () => {
-        setIsMobile(window.innerWidth < 640); // 640px is the sm breakpoint
+        setIsMobile(window.innerWidth < 1024); // 640px is the sm breakpoint
       };
       
       checkMobile();
@@ -77,7 +77,7 @@ import { useRef, useState, useEffect } from "react";
         style={{ height: `${smartCards.length * 100}vh` }}
       >
         <section className="w-full h-screen sticky top-0 overflow-hidden bg-black sm:mb-[50px]">
-          <div className="w-full mx-auto max-w-[1440px] px-4 sm:px-[30px] h-full flex flex-col">
+          <div className="w-full  px-4 sm:px-[30px] h-full flex flex-col">
             <motion.div
               className="py-[30px] sm:py-[50px]"
               initial={{ opacity: 0, y: 30 }}
@@ -104,7 +104,7 @@ import { useRef, useState, useEffect } from "react";
                     <div className="lg:w-[50%] flex">
                       <TextCard {...card} />
                     </div>
-                    <div className="lg:w-[50%] flex">
+                    <div className=" flex">
                       <ImageCard image={card.img} />
                     </div>
                   </motion.div>
@@ -124,7 +124,7 @@ import { useRef, useState, useEffect } from "react";
   
     useEffect(() => {
       const checkMobile = () => {
-        setIsMobile(window.innerWidth < 640); // 640px is the sm breakpoint
+        setIsMobile(window.innerWidth < 1024); // 640px is the sm breakpoint
       };
       
       checkMobile();
@@ -153,7 +153,7 @@ import { useRef, useState, useEffect } from "react";
     if (isMobile) {
       return (
         <div id="smart" className="w-full bg-black">
-          <div className="w-full mx-auto max-w-[1440px] px-4">
+          <div className="w-full px-4">
             <div className="py-[30px]">
               <h2 className="text-[30px] leading-[34px] text-white">
                 <span className="text-[#E1251B]">Stylish</span> Composites Excellence

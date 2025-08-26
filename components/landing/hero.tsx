@@ -8,7 +8,7 @@ export function Hero() {
   return (
     <div
       data-hero
-      className="min-h-screen w-full bg-black relative flex flex-col"
+      className="h-[800px] sm:h-[850px] w-full bg-black relative flex flex-col"
     >
       {/* Crimson Core Glow */}
       <div
@@ -50,7 +50,7 @@ export function Hero() {
                 <p className=" block sm:hidden text-[22px] leading-[0.46] tracking-[0] text-white pb-[130px] text-center">
                   Hall B2, Booth E12
                 </p>
-                <p className="text-[148px] md:text-[120px] xl:text-[230px] leading-[1]  tracking-[-0.03em] text-[#E1251B] -ml-[3px] md:-ml-2 xl:-ml-3 text-left">
+                <p className="text-[135px] md:text-[120px] xl:text-[230px] leading-[1]  tracking-[-0.03em] text-[#E1251B] -ml-[3px] md:-ml-2 xl:-ml-3 text-left">
                   HRC{" "}
                   <span className="font-instrument-italic text-white leading-[1] text-[57px] md:text-[120px] xl:text-[230px]">
                     at
@@ -58,16 +58,16 @@ export function Hero() {
                 </p>
               </div>
               <div>
-                <p className=" xl:text-[36px] leading-[1] md:leading-[1] font-instrument-italic  tracking-[0] text-white   text-right ">
+                <p className="hidden sm:block xl:text-[36px] leading-[1] md:leading-[1] font-instrument-italic  tracking-[0] text-white   text-right ">
                   Hall B2, Booth E12
                 </p>
               </div>
             </div>
-            <p className="text-[57px] md:text-[120px] xl:text-[230px] leading-[1]  tracking-[-0.03em] text-white -ml-[3px] md:-ml-2 xl:-ml-3 text-left uppercase">
+            <p className="text-[55px] md:text-[120px] xl:text-[230px] leading-[1]  tracking-[-0.03em] text-white -ml-[3px] md:-ml-2 xl:-ml-3 text-left uppercase">
               IAA MOBILITY
             </p>
             <div>
-              <div className="flex justify-between">
+              <div className="flex items-center flex-col sm:flex-row sm:justify-between gap-5 sm:gap-0 mt-[130px] sm:mt-0">
                 <p className=" xl:text-[36px] leading-[1] md:leading-[1] font-instrument-italic  tracking-[0] text-white   text-left ">
                   Press Day : 8 September 2025
                 </p>

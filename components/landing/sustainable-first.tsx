@@ -87,7 +87,7 @@ export const SustainableSecond = () => {
 
 export const SustainableThird = () => {
   return (
-    <div className="bg-[#0E0E0E] rounded-[10px] sm:rounded-[15px] my-[30px] sm:my-[50px]">
+    <div className="bg-[#0E0E0E] rounded-[10px] sm:rounded-[15px] mt-[30px] sm:my-[50px]">
       <div className="flex flex-col lg:flex-row  justify-center p-4 sm:p-[30px]   gap-4 sm:gap-[30px]">
         <SecondImageCard
           image="/sustainable/front-bumper.png"
