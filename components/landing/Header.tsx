@@ -49,13 +49,22 @@ const Header = () => {
       <nav className="pt-[25px] sm:pt-[30px] border-gray-200 relative z-50">
         <div className="flex w-full max-w-[1440px] flex-wrap items-center justify-start  mx-auto px-4 md:px-[30px]">
           {/* Mobile layout: Hamburger (left) + Logo (center) */}
-          <div className="md:hidden flex items-center justify-end w-full">
+          <div className="md:hidden flex items-center justify-between w-full">
+            <div>
+            <img 
+            src="/logo.svg"
+            alt="logo"
+            className="w-[91px] h-[40px] text-white cursor-pointer "
+            />
+            </div>
+            <div>
             <p
               onClick={() => setIsOpen((prev) => !prev)}
               className="text-[14px] cursor-pointer text-white leading-1 tracking-0 font-instrument-italic"
             >
               Menu
             </p>
+            </div>
           </div>
 
           {/* Desktop Logo - Left side */}
