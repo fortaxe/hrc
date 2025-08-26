@@ -41,7 +41,7 @@ const Footer = () => {
             </div>
 
             <div className="flex-shrink-0">
-            <h3 className="text-[#F6F6EB] sm:mb-5 mb-4 description">Follow Us</h3>
+            <h3 className="text-[#F6F6EB]! sm:mb-5 mb-4 description">Follow Us</h3>
             <div className="flex space-x-4">
               {socialMedia.map((item) => (
                 <Link 
