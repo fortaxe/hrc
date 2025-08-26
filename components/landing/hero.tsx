@@ -33,7 +33,7 @@ export function Hero() {
       </div>
 
       {/* Hero Content */}
-      <div className=" pt-[65px] sm:pt-[70px] ">
+      <div className=" pt-[65px] sm:pt-[176px] ">
         <div className="flex flex-1 justify-center items-center relative  max-w-[1440px] mx-auto w-full">
           <motion.div
             initial={{ opacity: 0.0, y: 40 }}
@@ -43,16 +43,16 @@ export function Hero() {
               duration: 0.8,
               ease: "easeInOut",
             }}
-            className="flex flex-col gap-4 max-w-[1440px] w-full  text-left px-[16px] sm:px-[30px]"
+            className="flex flex-col gap-5 sm:gap-[15px] max-w-[1440px] w-full  text-left px-[16px] sm:px-[30px]"
           >
             <div className="flex justify-between items-end ">
               <div>
                 <p className="font-instrument-italic block sm:hidden text-[22px] leading-[0.46] tracking-[0] text-white pb-[130px] text-center">
                   Hall B2, Booth E12
                 </p>
-                <p className="text-[135px] md:text-[120px] xl:text-[230px] leading-[1]  tracking-[-0.03em] text-[#E1251B] -ml-[3px] md:-ml-2 xl:-ml-3 text-left">
-                  HRC{" "}
-                  <span className="font-instrument-italic text-white leading-[1] text-[57px] md:text-[120px] xl:text-[230px]">
+                  <p className="text-[148px] md:text-[120px] xl:text-[230px] -ml-[13px] md:-ml-[21px] tracking-[-0.03em] text-[#E1251B] text-left leading-[106px] md:leading-[170px]">
+                  HRC
+                  <span className="font-instrument-italic text-white text-[57px] md:text-[120px] xl:text-[230px] ml-2 sm:ml-5 leading-[42px] md:leading-[170px]">
                     at
                   </span>
                 </p>
@@ -63,7 +63,7 @@ export function Hero() {
                 </p>
               </div>
             </div>
-            <p className="text-[55px] md:text-[120px] xl:text-[230px] leading-[1]  tracking-[-0.03em] text-white -ml-[3px] md:-ml-2 xl:-ml-3 text-left uppercase">
+            <p className="text-[57px] md:text-[120px] xl:text-[230px] leading-[42px] md:leading-[170px]  tracking-[-0.03em] text-white  text-left uppercase md:-ml-[21px]">
               IAA MOBILITY
             </p>
             <div>
