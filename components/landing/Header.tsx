@@ -55,7 +55,10 @@ const Header = () => {
             onClick={() => router.push("/")}
             src="/logo.svg"
             alt="logo"
-            className="w-[91px] h-[40px] text-white cursor-pointer "
+            width={91}
+            height={40}
+            className="w-[91px] h-[40px] text-white cursor-pointer block"
+            style={{ aspectRatio: '91/40' }}
             />
             </div>
             <div>
@@ -77,7 +80,10 @@ const Header = () => {
               <img
                 src="/logo.svg"
                 alt="logo"
-                className=" h-[30px] text-white cursor-pointer "
+                width={71}
+                height={30}
+                className="h-[30px] text-white cursor-pointer block"
+                style={{ aspectRatio: '71/30' }}
               />
             </div>
 
@@ -140,7 +146,10 @@ const Header = () => {
               <img
                 src="/logo.svg"
                 alt="logo"
-                className="w-[373px]  h-[150.77px] text-white cursor-pointer"
+                width={373}
+                height={151}
+                className="w-[373px] h-[150.77px] text-white cursor-pointer block"
+                style={{ aspectRatio: '373/151' }}
               />
             </div>
             {/* Content Wrapper */}
