@@ -81,12 +81,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${instrumentSerifItalic.variable}  antialiased bg-black`}
       >
-       <ViewTransitions>
+      
        <ReactLenis root>
           {children}
           <Footer />
           </ReactLenis>
-          </ViewTransitions>
+       
        
       </body>
     </html>
