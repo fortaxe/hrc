@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react";
 import { SustainableAnimated } from "@/components/landing/sustainable-animated";
 

@@ -1,3 +1,5 @@
+"use client"
+
 import { SmartCard } from "@/components/landing/complete-card";
 
 const Smart = () => {

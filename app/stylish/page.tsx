@@ -1,3 +1,5 @@
+"use client"
+
 import { StyleCompleteCard } from "@/components/landing/complete-card";
 
 const Style = () => {
