@@ -91,11 +91,12 @@ export const SustainableThird = () => {
       <div className="flex flex-col lg:flex-row  justify-center p-4 sm:p-[30px]   gap-4 sm:gap-[30px]">
         <SecondImageCard
           image="/sustainable/front-bumper.png"
-          description="Non-woven fabric / TP felt"
+          description="Front Bumper left lower air curtain plastic part"
         />
         <SecondImageCard
           image="/sustainable/Backrest upper rear decorative cover plastic part (2).png"
-          description="Injection molding pellets"
+          description="Backrest upper rear decorative cover plastic part
+"
         />
       </div>
     </div>

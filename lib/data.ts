@@ -7,7 +7,7 @@ export const smartCards = [
     secondDescription: "Total carbon fiber usage of the whole vehicle",
     thirdHeading: "30%",
     thirdDescription: "Weight reduction compared to steelaluminum option",
-    img: "/1.png"
+    img: "/smart/1.png"
   },
   {
     heading: "Automotive Door Module",
