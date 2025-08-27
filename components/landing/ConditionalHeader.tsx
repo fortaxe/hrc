@@ -15,7 +15,7 @@ const ConditionalHeader = () => {
   
   // Don't render anything during SSR/hydration to prevent mismatch
   if (!mounted) {
-    return <div className="h-0" />; // Placeholder to maintain layout
+    return <div className="h-[62px]" />; // Placeholder to maintain layout
   }
   
   // Don't render header on home page (it's handled by Hero component)
