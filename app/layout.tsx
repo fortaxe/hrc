@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Instrument_Serif } from "next/font/google";
 import "./globals.css";
-import ReactLenis from "lenis/react";
-import { ViewTransitions } from "next-view-transitions";
 import Script from "next/script";
 import Footer from "@/components/ui/footer";
+import ConditionalHeader from "@/components/landing/ConditionalHeader";
 
 
 
@@ -81,13 +80,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${instrumentSerifItalic.variable}  antialiased bg-black`}
       >
-      
-      
-          {children}
-          <Footer />
-        
-       
-       
+        <ConditionalHeader />
+        {children}
+        <Footer />
       </body>
     </html>
   );
