@@ -46,7 +46,7 @@ const ContactUs = () => {
         <div className="flex flex-col lg:flex-row gap-[20px] sm:gap-[30px]">
           {/* Left Column - Get In Touch */}
           <div className="flex-1 sm:w-1/2" >
-            <p className="text-[30px] md:text-[64px] sm:leading-[1] tracking-[0em] text-white mb-[20px] sm:mb-[30px]">
+            <p className="text-[30px] md:text-[64px] sm:leading-[1] tracking-[0em] text-white mb-[20px] sm:mb-[30px] font-instrument-italic">
               Get In Touch
             </p>
             <p className="description max-w-[493px]" >
@@ -61,7 +61,7 @@ const ContactUs = () => {
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-[30px]">
               {/* What can we help you with? */}
               <div className="mb-[20px] sm:mb-[30px]">
-                <p className="text-white! description mb-[25px]">What can we help you with?</p>
+                <p className="text-white text-[16px] sm:text-[24px]  mb-[25px] font-instrument-italic">What can we help you with?</p>
               </div>
 
               {/* First Row - Full Name and Mobile */}
@@ -80,7 +80,7 @@ const ContactUs = () => {
                         message: "Full name must be at least 2 characters"
                       }
                     })}
-                    className={`w-full bg-[#181818]  rounded-[5px] h-[42px] text-white placeholder-gray-500 focus:outline-none transition-colors px-4 ${
+                    className={`w-full bg-[#181818]  rounded-[5px] h-[42px] text-white placeholder:text-[#141414] focus:outline-none transition-colors px-4 ${
                       errors.fullName ? 'border-red-500 focus:border-red-500' : 'border-[#333] focus:border-[#E1251B]'
                     }`}
                    
@@ -103,7 +103,7 @@ const ContactUs = () => {
                         message: "Please enter a valid mobile number"
                       }
                     })}
-                    className={`w-full bg-[#181818] h-[42px]  rounded-[5px] text-white placeholder-gray-500 focus:outline-none transition-colors px-4 ${
+                    className={`w-full bg-[#181818] h-[42px]  rounded-[5px] text-white placeholder:text-[#141414] focus:outline-none transition-colors px-4 ${
                       errors.mobile ? 'border-red-500 focus:border-red-500' : 'border-[#333] focus:border-[#E1251B]'
                     }`}
                    
@@ -130,7 +130,7 @@ const ContactUs = () => {
                         message: "Please enter a valid email address"
                       }
                     })}
-                    className={`w-full bg-[#181818] h-[42px]  rounded-[5px] text-white placeholder-gray-500 focus:outline-none transition-colors px-4 ${
+                    className={`w-full bg-[#181818] h-[42px]  rounded-[5px] text-white placeholder:text-[#141414] focus:outline-none transition-colors px-4 ${
                       errors.email ? 'border-red-500 focus:border-red-500' : 'border-[#333] focus:border-[#E1251B]'
                     }`}
                    
@@ -153,7 +153,7 @@ const ContactUs = () => {
                         message: "City must be at least 2 characters"
                       }
                     })}
-                    className={`w-full bg-[#181818] h-[42px]  rounded-[5px] text-white placeholder-gray-500 focus:outline-none transition-colors px-4 ${
+                      className={`w-full bg-[#181818] h-[42px]  rounded-[5px] text-white placeholder:text-[#141414] focus:outline-none transition-colors px-4 ${
                       errors.city ? 'border-red-500 focus:border-red-500' : 'border-[#333] focus:border-[#E1251B]'
                     }`}
                    
@@ -179,7 +179,7 @@ const ContactUs = () => {
                     }
                   })}
                   rows={4}
-                  className={`w-full bg-[#181818] h-[90px]  rounded-[5px] text-white focus:outline-none transition-colors resize-vertical px-4 py-2 ${
+                  className={`w-full bg-[#181818] h-[90px]  rounded-[5px] text-white placeholder:text-[#141414] focus:outline-none transition-colors resize-vertical px-4 py-2 ${
                     errors.subject ? 'border-red-500 focus:border-red-500' : 'border-[#333] focus:border-[#E1251B]'
                   }`}
                  

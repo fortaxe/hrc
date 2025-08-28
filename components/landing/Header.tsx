@@ -15,16 +15,11 @@ const Header = () => {
     { label: "Sustainable", href: "/sustainable", id: "/01" },
     { label: "Smart", href: "/smart", id: "/02" },
     { label: "Stylish", href: "/stylish", id: "/03" },
-    { label: "Munich, Germany", href: "", id: "" },
-  ];
-
-
-  const mobileNavItems = [
-    { label: "Sustainable", href: "/sustainable", id: "/01" },
-    { label: "Smart", href: "/smart", id: "/02" },
-    { label: "Stylish", href: "/stylish", id: "/03" },
    
   ];
+
+
+
   // Prevent body scroll when mobile menu is open
   useEffect(() => {
     if (isOpen) {
@@ -62,17 +57,14 @@ const Header = () => {
             />
             </div>
             <div>
-            <p
-              onClick={() => setIsOpen((prev) => !prev)}
-              className="text-[14px] cursor-pointer text-white leading-1 tracking-0 font-instrument-italic"
-            >
-              Menu
-            </p>
+           <img 
+           onClick={() => setIsOpen((prev) => !prev)}
+           src="/menu.svg" alt="menu" className=" cursor-pointer " />
             </div>
           </div>
 
           {/* Desktop Logo - Left side */}
-          <div className="flex items-center gap-[50px] xl:gap-[50px] 3xl:gap-[300px]">
+          <div className="flex items-center justify-between w-full">
             <div
               onClick={() => router.push("/")}
               className="hidden md:flex gap-[6px] sm:gap-2 items-center"
@@ -87,7 +79,7 @@ const Header = () => {
               />
             </div>
 
-            <ul className="hidden md:flex items-center gap-[50px] xl:gap-[209px] ">
+            <ul className="hidden md:flex justify-center items-center gap-[50px] xl:gap-[85px] ">
               {navItems.map(({ label, href, id }) => {
                 return (
                   <li key={label}>
@@ -98,16 +90,17 @@ const Header = () => {
                       <span
                         className={`text-[16px] leading-[1] tracking-[0]  text-white`}
                       >
-                        {label}
-                        <span className={`font-instrument-italic text-white`}>
-                          {id}
-                        </span>
+                        /{label}
                       </span>
                     </a>
                   </li>
                 );
               })}
             </ul>
+
+            <a href="#" className="hidden md:block text-[16px] leading-[1] tracking-[0] text-white">
+              Munich, Germany
+            </a>
           </div>
         </div>
 
@@ -157,7 +150,7 @@ const Header = () => {
               {/* Navigation Menu */}
               <div className="">
                 <ul className=" ">
-                  {mobileNavItems.map((item) => (
+                  {navItems.map((item) => (
                     <li key={item.label} className="border-b border-[#303030] -mx-4">
                       <a
                         href={item.href}
