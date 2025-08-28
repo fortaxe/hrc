@@ -49,9 +49,9 @@ export function Hero() {
               <p className="font-instrument-italic block sm:hidden text-[22px] leading-[0.46] tracking-[0] text-white pb-[130px] text-center">
                 Hall B2, Booth E12
               </p>
-              <p className="text-[148px] md:text-[120px] xl:text-[230px] -ml-[13px] md:-ml-[21px] tracking-[-0.03em] text-[#E1251B] text-left leading-[106px] md:leading-[170px]">
+              <p className="text-[148px] md:text-[120px] xl:text-[230px] sm:-ml-[13px] md:-ml-[21px] tracking-[-0.03em] text-[#E1251B] sm:text-left text-center leading-[106px] md:leading-[170px]">
                 HRC
-                <span className="font-instrument-italic text-white text-[57px] md:text-[120px] xl:text-[230px] ml-2 sm:ml-5 leading-[42px] md:leading-[170px]">
+                <span className="font-instrument-italic text-white text-[57px] md:text-[120px] xl:text-[230px] ml-2 sm:ml-5 leading-[42px] md:leading-[170px] ">
                   at
                 </span>
               </p>
@@ -62,7 +62,7 @@ export function Hero() {
               </p>
             </div>
           </div>
-          <p className="text-[55px] mobile:text-[57px] md:text-[120px] xl:text-[230px] leading-[42px] md:leading-[170px]  tracking-[-0.03em] text-white  text-left uppercase md:-ml-[21px]">
+          <p className="text-[55px] mobile:text-[57px] md:text-[120px] xl:text-[230px] leading-[42px] md:leading-[170px]  tracking-[-0.03em] text-white  sm:text-left uppercase md:-ml-[21px] text-center">
             IAA MOBILITY
           </p>
           <div>
