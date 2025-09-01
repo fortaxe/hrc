@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Instrument_Serif } from "next/font/google";
+import { Poppins, Geist_Mono, Instrument_Serif } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import Footer from "@/components/ui/footer";
 import ConditionalHeader from "@/components/landing/ConditionalHeader";
 
-
-
-const geistSans = Geist({
+const geistSans = Poppins({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const geistMono = Geist_Mono({

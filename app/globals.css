@@ -125,10 +125,10 @@
   }
 }
 
-.font-instrument-italic {
+/* .font-instrument-italic {
   font-family: var(--font-instrument-serif-italic);
   font-style: italic; 
-}
+} */
 
 .card-heading {
   font-size: 24px;
