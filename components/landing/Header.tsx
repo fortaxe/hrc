@@ -90,7 +90,7 @@ const Header = () => {
                       <span
                         className={`text-[16px] leading-[1] tracking-[0]  text-white`}
                       >
-                        /{label}
+                        {label}
                       </span>
                     </a>
                   </li>
@@ -99,7 +99,7 @@ const Header = () => {
             </ul>
 
             <a href="#" className="hidden md:block text-[16px] leading-[1] tracking-[0] text-white">
-              Munich, Germany
+              IAA Mobility
             </a>
           </div>
         </div>
