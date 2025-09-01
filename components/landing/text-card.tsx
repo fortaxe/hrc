@@ -22,21 +22,21 @@ const TextCard = ({
      
       {firstHeading && firstDescription && (
         <div className="pt-[20px] sm:pt-[30px]">
-          <p className="text-[16px] sm:text-[16px] leading-[1] tracking-[0em] text-[#F6F6EB]">{firstHeading}</p>
+          <p className="text-[16px] sm:text-[24px] leading-[1] tracking-[0em] text-[#F6F6EB]">{firstHeading}</p>
           <p className="description pt-[15px]">{firstDescription}</p>
         </div>
       )}
  
       {secondHeading && secondDescription && (
         <div className="pt-[20px] sm:pt-[30px]">
-          <p className="text-[16px] sm:text-[16px] leading-[1] tracking-[0em] text-[#F6F6EB]">{secondHeading}</p>
+          <p className="text-[16px] sm:text-[24px] leading-[1] tracking-[0em] text-[#F6F6EB]">{secondHeading}</p>
           <p className="description pt-[15px]">{secondDescription}</p>
         </div>
       )}
      
       {thirdHeading && thirdDescription && (
         <div className="pt-[20px] sm:pt-[30px]">
-          <p className="text-[16px] sm:text-[16px] leading-[1] tracking-[0em] text-[#F6F6EB]">{thirdHeading}</p>
+          <p className="text-[16px] sm:text-[24px] leading-[1] tracking-[0em] text-[#F6F6EB]">{thirdHeading}</p>
           <p className="description pt-[15px]">{thirdDescription}</p>
         </div>
       )}
