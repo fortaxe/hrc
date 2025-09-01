@@ -14,9 +14,9 @@ const TextCard = ({
     <div className="flex flex-col p-4 sm:p-[30px] bg-[#181818] rounded-[10px] sm:rounded-[15px] w-full">
       
       <div>
-        <p className="text-[#E1251B] text-[16px] sm:text-[16px] leading-[1] tracking-[0em]">{heading}</p>
+        <p className="text-[#E1251B] text-[18px] sm:text-[24px] leading-[1] tracking-[0em] font-semibold">{heading}</p>
         {description && (
-          <p className="description pt-[15px]">{description}</p>
+          <p className="description pt-[15px] sm:pt-[25px]">{description}</p>
         )}
       </div>
      
