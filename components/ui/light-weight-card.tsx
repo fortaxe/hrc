@@ -7,7 +7,7 @@ const LightWeightCard = ({ buttonName, buttonLink, img, heading }: LightWeightCa
     return (
         <div 
         onClick={() => router.push(buttonLink)}
-        className="flex flex-col sm:min-w-[275px] p-[30px] bg-[#0E0E0E] rounded-[10px] border border-gray-600/30 sm:min-h-[305px] justify-center w-full h-full">
+        className="flex flex-col sm:w-[275px] p-[30px] bg-[#0E0E0E] rounded-[10px] border border-gray-600/30 sm:h-[305px] justify-center w-full h-full">
             {/* Button at the very top */}
             <div className="mb-4 sm:flex justify-center items-center hidden ">
                 <PrimaryButton name={buttonName} onClick={() => router.push(buttonLink)} />
