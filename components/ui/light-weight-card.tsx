@@ -15,7 +15,7 @@ const LightWeightCard = ({ buttonName, buttonLink, img, heading }: LightWeightCa
             {/* Centered image */}
             <div className="mb-5 flex flex-1 items-center justify-center">
                 <img 
-                className="sm:size-full size-[42px]"
+                className="sm:size-auto size-[42px] "
                 src={img} alt={buttonName} />
             </div>
                 <div className="mt-auto text-center sm:flex justify-center items-center hidden">
