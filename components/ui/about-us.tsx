@@ -1,14 +1,12 @@
-"use client"
-
+"use client";
 
 import React from "react";
 import PrimaryButton from "../buttons/primary-button";
 import { useRouter } from "next/navigation";
 
-
 const AboutUs = () => {
   const router = useRouter();
- 
+
   return (
     <div className="flex flex-col items-center justify-center py-[50px] sm:py-[70px] mx-auto max-w-[1440px] px-4 sm:px-[30px] gap-[30px]">
       <img src="/logo.svg" />
@@ -24,7 +22,7 @@ const AboutUs = () => {
         onClick={() => router.push("/#contact")}
       />
 
-      <img 
+      <img
         src="/hrc.png"
         alt="about-us"
         className="rounded-[10px] sm:rounded-[15px]"

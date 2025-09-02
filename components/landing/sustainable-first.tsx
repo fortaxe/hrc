@@ -92,8 +92,8 @@ export const SustainableSecond = () => {
 "
           />
           <SecondImageCard
-            image="/sustainable/Backrest upper rear decorative cover plastic part (2).png"
-            description="Backrest upper rear decorative cover plastic part
+            image="/sustainable/automotive.png"
+            description="Automotive underbody panels
 "
           />
         </div>
