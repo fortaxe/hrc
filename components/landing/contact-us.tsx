@@ -41,7 +41,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="p-4 sm:px-[30px] py-[30px]  sm:py-[50px]">
+    <div className="p-4 sm:px-[30px] py-[50px]  sm:py-[70px]">
       <div className="bg-[#0E0E0E] max-w-[1440px] mx-auto p-4 md:p-[30px] rounded-[15px]">
         <div className="flex flex-col lg:flex-row gap-[20px] sm:gap-[30px]">
           {/* Left Column - Get In Touch */}
@@ -197,6 +197,9 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
+      <p className="text-left description text-[12px]! max-w-[800px] sm:mt-[30px] mt-[20px] sm:ml-3">
+      *You agree to your data being used and stored so that we can deal with the matter concerning you. It will not be passed on to third parties. Further information and instructions on how to revoke your consent can be found in the privacy policy.
+      </p>
     </div>
   );
 };

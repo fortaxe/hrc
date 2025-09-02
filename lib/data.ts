@@ -169,3 +169,24 @@ export const socialMedia = [
       src: "/social/youtube.svg"
   }
 ]
+
+export const lightWeightCards = [
+  {
+    buttonName: "Sustainable",
+    buttonLink: "/sustainable",
+    img: "/light-weight/1.svg",
+    heading: "Ecosystem Solutions"
+  },
+  {
+    buttonName: "Smart",
+    buttonLink: "/smart",
+    img: "/light-weight/2.svg",
+    heading: "Innovations in Lightweighting"
+  },
+  {
+    buttonName: "Stylish",
+    buttonLink: "/stylish",
+    img: "/light-weight/3.svg",
+    heading: "Composites Excellence"
+  }
+];

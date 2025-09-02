@@ -3,8 +3,11 @@
 import { motion } from "motion/react";
 import React from "react";
 import Header from "./Header";
+import { useRouter } from "next/navigation";
+import PrimaryButton from "../buttons/primary-button";
 
 export function Hero() {
+  const router = useRouter();
   return (
     <div
       data-hero
@@ -33,7 +36,7 @@ export function Hero() {
       </div>
 
       {/* Hero Content */}
-      <div className="flex flex-1 pt-[50px] md:pt-0 justify-center md:items-center w-full max-w-[1440px] mx-auto relative grow">
+      <div className="flex flex-1 pt-[50px] md:pt-0 justify-center items-center w-full max-w-[1440px] mx-auto relative grow">
         <motion.div
           initial={{ opacity: 0.0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -47,20 +50,25 @@ export function Hero() {
           <div className="flex flex-col items-center max-w-[998px] mx-auto justify-center text-center">
             <div>
             
-              <p className="text-[42px] md:text-[76px]  tracking-[-0.03em] leading-[52px] md:leading-[70px] text-white text-center">
-                <span className="text-[#E1251B]">Advancing</span> Mobility Toward a Greener <span className="text-[#E1251B]">Future</span> with Composite Innovation
+              <p className="text-[52px] md:text-[76px]  tracking-[-0.03em] leading-[52px] md:leading-[70px] text-white text-center">
+              <span className="text-[#E1251B]">HRC</span> at IAA Mobility 2025 – Hall B2, Booth E12
               </p>
             </div>
           </div>
           <div>
-            <div className="flex flex-col items-center py-[30px]   text-center">
-              <p className="text-[24px] xl:text-[30px] leading-[26px] md:leading-[1] font-instrument-italic tracking-[0] text-white text-center">
-                HRC at IAA Mobility 2025 – Hall B2, Booth E12
+            <div className="flex flex-col items-center sm:py-[30px] py-[20px]   text-center">
+              <p className="text-[24px] xl:text-[30px] leading-[26px] md:leading-[1] font-instrument-italic tracking-[0] text-[#bcbcbc] text-center">
+                
+                <span className="">Advancing</span> Mobility Toward a Greener <span className="">Future</span> with Composite Innovation
               </p>
             </div>
-            <p className="description">
+            <PrimaryButton
+            name="About us"
+            onClick={() => router.push("/#about-us")}
+            />
+            {/* <p className="description">
               HRC Group is one of the world’s leading composite solution providers. From R&D and engineering to tooling, mass production, and recycling, we deliver advanced carbon fiber solutions that drive sustainable, lightweight, and high-performance mobility.
-            </p>
+            </p> */}
           </div>
         </motion.div>
       </div>

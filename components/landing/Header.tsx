@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 import { usePathname, useRouter } from "next/navigation";
+import PrimaryButton from "../buttons/primary-button";
+
 
 const Header = () => {
   const router = useRouter();
@@ -17,8 +19,6 @@ const Header = () => {
     { label: "Stylish", href: "/stylish", id: "/03" },
    
   ];
-
-
 
   // Prevent body scroll when mobile menu is open
   useEffect(() => {
@@ -57,9 +57,15 @@ const Header = () => {
             />
             </div>
             <div>
-           <img 
+           {/* <img 
            onClick={() => setIsOpen((prev) => !prev)}
            src="/menu.svg" alt="menu" className=" cursor-pointer " />
+            </div> */}
+            <PrimaryButton
+            onClick={() => setIsOpen((prev) => !prev)}
+            name="Menu"
+              
+            />
             </div>
           </div>
 
@@ -98,7 +104,7 @@ const Header = () => {
               })}
             </ul>
 
-            <a href="#" className="hidden md:block text-[16px] leading-[1] tracking-[0] text-white">
+            <a href="#" className="hidden md:block text-[16px] leading-[1] tracking-[0] text-[#E1251B]">
               IAA Mobility
             </a>
           </div>

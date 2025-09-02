@@ -5,6 +5,8 @@ import Script from "next/script";
 import Footer from "@/components/ui/footer";
 import ConditionalHeader from "@/components/landing/ConditionalHeader";
 
+import MobileDock from "@/components/mobile-dock";
+
 const geistSans = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   variable: "--font-geist-sans",
@@ -84,6 +86,7 @@ export default function RootLayout({
         <ConditionalHeader />
         {children}
         <Footer />
+   <MobileDock />
       </body>
     </html>
   );

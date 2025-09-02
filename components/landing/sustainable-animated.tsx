@@ -16,7 +16,7 @@ export const SustainableAnimated = () => {
   const sustainableComponents = [
     { component: SustainableFirst, id: "sustainable-first" },
     { component: SustainableSecond, id: "sustainable-second" },
-    { component: SustainableThird, id: "sustainable-third" },
+    // { component: SustainableThird, id: "sustainable-third" },
   ];
 
   useEffect(() => {

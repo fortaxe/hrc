@@ -30,3 +30,11 @@ export interface SmartCardProps {
     thirdDescription: string;
     img: string;
         }
+
+        export interface LightWeightCardProps {
+            buttonName: string;
+            buttonLink: string;
+            img: string;
+            heading: string;
+           
+        }

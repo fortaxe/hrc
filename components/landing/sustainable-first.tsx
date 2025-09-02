@@ -64,12 +64,12 @@ export const SustainableFirst = () => {
 
 export const SustainableSecond = () => {
   return (
-    <div className="bg-[#0E0E0E] rounded-[10px] sm:rounded-[15px]">
+    <div className="bg-[#0E0E0E] rounded-[10px] sm:rounded-[15px] mb-[30px] sm:mb-[50px]">
       <div className="sm:pb-[30px] pb-4 px-4 sm:px-[30px]">
         <p className="leading-[1] tracking-[0] text-[24px] text-[#E1251B] sm:pt-[50px] sm:pb-[80px]  pt-5 pb-5">
           End Products
         </p>
-        <div className="flex flex-col lg:flex-row  justify-center    gap-5 sm:gap-[30px]">
+        <div className="grid grid-cols-1 lg:grid-cols-3 justify-center    gap-5 sm:gap-[30px]">
           <SecondImageCard
             image="/sustainable/fender-decor.png"
             description="Fender decoration panel"
@@ -79,6 +79,20 @@ export const SustainableSecond = () => {
             image="/sustainable/shift-lever.png"
             description="Shift lever decorative panel plastic part"
           />
+            <SecondImageCard
+          image="/sustainable/front-bumper.png"
+          description="Front Bumper left lower air curtain plastic part"
+        />
+        <SecondImageCard
+          image="/sustainable/Backrest upper rear decorative cover plastic part (2).png"
+          description="Backrest upper rear decorative cover plastic part
+"
+        />
+         <SecondImageCard
+          image="/sustainable/Backrest upper rear decorative cover plastic part (2).png"
+          description="Backrest upper rear decorative cover plastic part
+"
+        />
         </div>
       </div>
     </div>

@@ -155,3 +155,11 @@
     font-size: 20px;
   }
 }
+
+.scroll-baby[style*="opacity: 1"] {
+  @apply text-yellow-300 dark:text-yellow-500;
+}
+
+.scroll-file[style*="opacity: 1"] {
+  @apply text-blue-300 dark:text-blue-500;
+}
