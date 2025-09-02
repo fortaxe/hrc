@@ -153,16 +153,16 @@ export const socialMedia = [
       src: "/social/linkedin.svg"
   },
   
-  {
+  // {
      
-      link: "/facebook",
-      src: "/social/facebook.svg"
-  },
-  {
+  //     link: "/facebook",
+  //     src: "/social/facebook.svg"
+  // },
+  // {
  
-      link: "/instagram",
-      src: "/social/insta.svg"
-  },
+  //     link: "/instagram",
+  //     src: "/social/insta.svg"
+  // },
   {
   
       link: "/youtube",
