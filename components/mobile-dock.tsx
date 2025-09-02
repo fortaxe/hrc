@@ -22,7 +22,7 @@ const MobileDock = () => {
         transition={{ type: "spring", stiffness: 300, damping: 30 }}
         className="mx-4 mb-4 p-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full"
       >
-        <div className="flex items-center justify-around">
+        <div className="flex items-center justify-between">
           {navItems.map((item) => {
             const isActive = pathname === item.href;
             return (
