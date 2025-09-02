@@ -24,6 +24,8 @@ const Footer = () => {
               {firstColumn.map((item) => (
                 <Link
                   className="block text-[#BCBCBC]! description hover:text-white transition-colors"
+                  // open in new tab
+                  target="_blank"
                   href={item.link}
                   key={item.title}
                 >
@@ -37,6 +39,7 @@ const Footer = () => {
               {secondColumn.map((item) => (
                 <Link
                   className="block text-[#BCBCBC]! description hover:text-white transition-colors"
+                  target="_blank"
                   href={item.link}
                   key={item.title}
                 >
@@ -51,7 +54,7 @@ const Footer = () => {
               </h3>
               <div className="flex space-x-2">
                 {socialMedia.map((item) => (
-                  <Link className="" href={item.link}>
+                  <Link className="" href={item.link} target="_blank">
                     <img src={item.src} alt="social" />
                   </Link>
                 ))}

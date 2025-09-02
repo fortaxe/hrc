@@ -117,56 +117,42 @@ export const styleCards = [
 
 export const firstColumn = [
   {
-      title: "About HRC",
-      link: "/about"
+    title: "About HRC",
+    link: "https://www.grouphrc.com/about"
   },
   {
-      title: "Services",
-      link: "/services"
+    title: "Services",
+    link: "https://www.grouphrc.com/services/production"
   },
   {
-      title: "Markets",
-      link: "/markets"
+    title: "Markets",
+    link: "https://www.grouphrc.com/markets/automotive"
   }
 ]
 
 export const secondColumn = [
   {
-      title: "Sustainability",
-      link: "/sustainable"
-  },
-  
-  {
-      title: "News",
-      link: "/news"
+    title: "Sustainability",
+    link: "https://www.grouphrc.com/sustainability"
   },
   {
-      title: "Contact Us",
-      link: "/#contact"
+    title: "News",
+    link: "https://www.grouphrc.com/news"
+  },
+  {
+    title: "Contact Us",
+    link: "https://www.grouphrc.com/contact"
   }
 ]
 
 export const socialMedia = [
   {
-     
-      link: "/linkedin",
-      src: "/social/linkedin.svg"
+    link: "https://www.linkedin.com/company/hengrui-corporation/",
+    src: "/social/linkedin.svg"
   },
-  
-  // {
-     
-  //     link: "/facebook",
-  //     src: "/social/facebook.svg"
-  // },
-  // {
- 
-  //     link: "/instagram",
-  //     src: "/social/insta.svg"
-  // },
   {
-  
-      link: "/youtube",
-      src: "/social/youtube.svg"
+    link: "https://www.youtube.com/@grouphrc",
+    src: "/social/youtube.svg"
   }
 ]
 
