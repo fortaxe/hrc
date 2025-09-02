@@ -25,7 +25,7 @@ export function Hero() {
           backgroundImage: 'url("/hh.png")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          opacity: 0.55,
+          opacity: 0.75,
         }}
       />
       {/* Header */}
