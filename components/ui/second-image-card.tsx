@@ -17,7 +17,7 @@ const SecondImageCard = ({image , description}: {image: string, description: str
 export const PreviewImageCard = ({image , description}: {image: string, description: string}) => {
   return (
       <div className="
-      h-[180px] sm:h-auto px-3
+      h-[195px] sm:h-auto px-3
       sm:px-[40px] sm:pt-[40px]  sm:pb-[30px]  py-3 flex flex-col items-center justify-center bg-[#181818] rounded-[15px] mt-auto">
       <img 
         src={image} alt="sustainable-first" />
