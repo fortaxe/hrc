@@ -1,7 +1,7 @@
 const SecondImageCard = ({image , description}: {image: string, description: string}) => {
   return (
       <div className="
-      h-[180px] sm:h-auto
+   
       sm:px-[40px] sm:pt-[40px]  sm:pb-[30px] px-4 py-2 flex flex-col items-center justify-center bg-[#181818] rounded-[15px] mt-auto">
       <img 
     
