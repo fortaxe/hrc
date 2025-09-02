@@ -15,7 +15,7 @@ const LightWeightCards = () => {
                 </p>
             </div>
             
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8">
+            <div className="flex flex-row items-center justify-center gap-2 sm:gap-8">
                 {lightWeightCards.map((card, index) => (
                     <LightWeightCard
                         key={card.buttonName}

@@ -15,7 +15,7 @@ export default function Home() {
 
       <LightWeightCards />
       <CardImage />
-      <section className="pt-[50px] sm:pt-[140px] pb-[70px]">
+      <section className="pt-[50px] sm:pt-[140px] sm:not-first:pb-[70px]">
       <ParallaxText baseVelocity={-5}>IAA Mobility 2025 </ParallaxText>
       <ParallaxText baseVelocity={5}>IAA Mobility 2025</ParallaxText>
     </section>
