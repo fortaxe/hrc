@@ -196,10 +196,13 @@ const ContactUs = () => {
             </form>
           </div>
         </div>
+    
       </div>
-      <p className="text-left description text-[12px]! max-w-[800px] sm:mt-[30px] mt-[20px] sm:ml-3">
+      <div className="max-w-[1440px] mx-auto">
+      <p className="text-left description text-[12px]! max-w-[800px]  sm:mt-[30px] mt-[20px] ">
       *You agree to your data being used and stored so that we can deal with the matter concerning you. It will not be passed on to third parties. Further information and instructions on how to revoke your consent can be found in the privacy policy.
       </p>
+      </div>
     </div>
   );
 };

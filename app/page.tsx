@@ -15,13 +15,14 @@ export default function Home() {
 
       <LightWeightCards />
       <CardImage />
-      <section className="pt-[50px] sm:pt-[140px] sm:not-first:pb-[70px]">
-      <ParallaxText baseVelocity={-5}>IAA Mobility 2025 </ParallaxText>
-      <ParallaxText baseVelocity={5}>IAA Mobility 2025</ParallaxText>
-    </section>
+      <section className="pt-[50px] sm:pt-[140px] sm:not-first:pb-[70px] mx-auto max-w-[1536px]">
+        <ParallaxText baseVelocity={-5}>IAA Mobility 2025 </ParallaxText>
+        <ParallaxText baseVelocity={5}>IAA Mobility 2025</ParallaxText>
+      </section>
       <div id="contact">
         <ContactUs />
       </div>
+      
     </div>
   );
 }
