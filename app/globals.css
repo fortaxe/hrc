@@ -163,3 +163,5 @@
 .scroll-file[style*="opacity: 1"] {
   @apply text-blue-300 dark:text-blue-500;
 }
+
+
