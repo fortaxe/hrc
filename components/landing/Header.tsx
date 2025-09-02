@@ -104,7 +104,7 @@ const Header = () => {
               })}
             </ul>
 
-            <a href="#" className="hidden md:block text-[16px] leading-[1] tracking-[0] text-[#E1251B]">
+            <a href="#" className="hidden md:block text-[16px] leading-[1] tracking-[0] text-white">
               IAA Mobility
             </a>
           </div>

@@ -25,7 +25,7 @@ export function Hero() {
           backgroundImage: 'url("/hh.png")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          opacity: 0.95,
+          opacity: 0.75,
         }}
       />
       {/* Header */}
@@ -45,11 +45,11 @@ export function Hero() {
           }}
           className="flex flex-col  max-w-[1440px] w-full text-center px-[16px] sm:px-[30px]"
         >
-          <div className="flex flex-col items-center max-w-[1100px] mx-auto justify-center text-center">
+          <div className="flex flex-col items-center max-w-[1200px] mx-auto justify-center text-center">
             <div>
             
-              <p className="text-[52px] md:text-[96px]  tracking-[-0.03em] leading-[52px] md:leading-[1] text-white text-center">
-              <span className="text-[#E1251B]">HRC</span> at IAA Mobility 2025 – Hall B2, Booth E12
+              <p className="text-[52px] md:text-[96px]  tracking-[-0.01em] leading-[52px] md:leading-[1] text-white text-center">
+              <span className="text-[#E1251B]">HRC</span> at IAA Mobility 2025 Hall B2, Booth E12
               </p>
             </div>
           </div>
