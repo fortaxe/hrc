@@ -29,7 +29,6 @@ const instrumentSerifItalic = Instrument_Serif({
 
 export const metadata: Metadata = {
   title: "HRC",
-  
 };
 
 export default function RootLayout({
@@ -86,7 +85,7 @@ export default function RootLayout({
         <ConditionalHeader />
         {children}
         <Footer />
-   <MobileDock />
+        {/* <MobileDock /> */}
       </body>
     </html>
   );

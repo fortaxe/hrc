@@ -11,7 +11,7 @@ export function Hero() {
   return (
     <div
       data-hero
-      className="h-[800px] sm:h-screen w-full bg-black relative flex flex-col"
+      className="h-[700px] sm:h-screen w-full bg-black relative flex flex-col"
     >
       {/* Crimson Core Glow */}
       <div
@@ -48,7 +48,7 @@ export function Hero() {
           <div className="flex flex-col items-center max-w-[1200px] mx-auto justify-center text-center">
             <div>
             
-              <p className="text-[52px] md:text-[96px]  tracking-[-0.01em] leading-[52px] md:leading-[1] text-white text-center">
+              <p className="text-[52px] md:text-[110px]  tracking-[-0.04em] leading-[52px] md:leading-[1] text-white text-center">
               <span className="text-[#E1251B]">HRC</span> at IAA Mobility 2025 Hall B2, Booth E12
               </p>
             </div>

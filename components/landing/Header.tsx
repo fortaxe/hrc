@@ -152,7 +152,7 @@ const Header = () => {
               />
             </div>
             {/* Content Wrapper */}
-            <div className="flex flex-col  pt-[50px]">
+            <div className="flex flex-col  pt-[30px]">
               {/* Navigation Menu */}
               <div className="">
                 <ul className=" ">
@@ -160,7 +160,7 @@ const Header = () => {
                     <li key={item.label} className="border-b border-[#303030] -mx-4">
                       <a
                         href={item.href}
-                        className="block font-instrument-italic px-4 py-[15px] text-white text-[28px] leading-none tracking-0 transition-colors"
+                        className="block font-instrument-italic px-4 py-[15px] text-white text-[24px] leading-none tracking-0 transition-colors"
                         onClick={handleMenuClose}
                       >
                         {item.label}
@@ -171,15 +171,15 @@ const Header = () => {
               </div>
             </div>
 
-            <div className="flex items-start flex-col sm:flex-row sm:justify-between gap-5 sm:gap-0 mt-[50px] sm:mt-0">
-              <p className="text-[22px]  leading-[1] md:leading-[1] font-instrument-italic  tracking-[0] text-white   text-left ">
+            <div className="flex items-start flex-col sm:flex-row sm:justify-between gap-2 sm:gap-0 mt-[30px] sm:mt-0">
+              <p className="text-[14px]  leading-[1] md:leading-[1] font-instrument-italic  tracking-[0] text-white   text-left ">
                 Munich, Germany
               </p>
-              <p className="text-[22px]  leading-[1] md:leading-[1] font-instrument-italic  tracking-[0] text-[#797979]   text-left ">
-                Press Day : 8 September 2025
+              <p className="text-[14px]  leading-[1] md:leading-[1] font-instrument-italic  tracking-[0] text-[#797979]   text-left ">
+                Press Day : 8 Sep 2025
               </p>
-              <p className="text-[22px]   leading-[1] md:leading-[1] font-instrument-italic  tracking-[0] text-[#797979]   text-right ">
-                Industry Days :9-12 September 2025{" "}
+              <p className="text-[14px]   leading-[1] md:leading-[1] font-instrument-italic  tracking-[0] text-[#797979]   text-right ">
+                Industry Days :9-12 Sep 2025{" "}
               </p>
             </div>
           </div>
