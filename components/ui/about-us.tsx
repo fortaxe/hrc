@@ -20,8 +20,8 @@ const AboutUs = () => {
       </p>
 
       <PrimaryButton
-        name="About us"
-        onClick={() => router.push("/#about-us")}
+        name="Contact us"
+        onClick={() => router.push("/#contact")}
       />
 
       <img 

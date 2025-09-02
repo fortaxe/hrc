@@ -3,7 +3,8 @@ import { firstColumn, secondColumn, socialMedia } from "@/lib/data";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0E0E0E] text-[#BCBCBC] max-w-[1440px] mx-auto rounded-[10px] sm:rounded-[15px] mb-4 sm:mb-[30px] ">
+    <div className="px-4 sm:px-[30px] max-w-[1440px] mx-auto">
+    <footer className="bg-[#0E0E0E] text-[#BCBCBC]  rounded-[10px] sm:rounded-[15px] mb-4 sm:mb-[30px] ">
       {/* Upper Section */}
       <div className="container px-4 sm:px-[30px]">
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center space-y-8 lg:space-y-0 p-4 sm:px-[30px] sm:pb-[261px] pb-[36px] sm:pt-[33px] ">
@@ -69,6 +70,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+    </div>
   );
 };
 

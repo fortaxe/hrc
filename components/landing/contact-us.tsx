@@ -41,8 +41,8 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="p-4 sm:px-[30px] py-[50px]  sm:py-[70px]">
-      <div className="bg-[#0E0E0E] max-w-[1440px] mx-auto p-4 md:p-[30px] rounded-[15px]">
+    <div className="p-4 sm:px-[30px] max-w-[1440px] mx-auto  py-[50px]  sm:py-[70px]">
+      <div className="bg-[#0E0E0E] p-4 md:p-[30px] rounded-[15px]">
         <div className="flex flex-col lg:flex-row gap-[20px] sm:gap-[30px]">
           {/* Left Column - Get In Touch */}
           <div className="flex-1 sm:w-1/2" >

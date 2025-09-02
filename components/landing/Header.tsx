@@ -40,7 +40,7 @@ const Header = () => {
   };
 
   return (
-    <header className="relative ">
+    <header className="relative  ">
       <nav className="pt-[16px] sm:pt-[30px] border-gray-200 relative z-50">
         <div className="flex w-full max-w-[1440px] flex-wrap items-center justify-start  mx-auto px-4 md:px-[30px]">
           {/* Mobile layout: Hamburger (left) + Logo (center) */}
