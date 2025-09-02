@@ -85,7 +85,7 @@ export default function RootLayout({
         <ConditionalHeader />
         {children}
         <Footer />
-        {/* <MobileDock /> */}
+        <MobileDock />
       </body>
     </html>
   );

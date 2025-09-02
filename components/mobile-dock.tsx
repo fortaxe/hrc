@@ -8,6 +8,11 @@ const MobileDock = () => {
   const router = useRouter();
   const pathname = usePathname();
 
+  // Hide the dock on the home ("/") screen
+  if (pathname === "/") {
+    return null;
+  }
+
   const navItems = [
     { label: "Sustainable", href: "/sustainable" },
     { label: "Smart", href: "/smart" },
@@ -30,9 +35,9 @@ const MobileDock = () => {
                 key={item.label}
                 onClick={() => router.push(item.href)}
                 whileTap={{ scale: 0.95 }}
-                className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
+                className={`px-4 py-2 rounded-full text-sm  transition-all duration-200 ${
                   isActive
-                    ? "bg-white text-black shadow-lg"
+                    ? "bg-[#141414] text-[#BCBCBC] shadow-lg"
                     : "text-white hover:bg-white/10"
                 }`}
               >
