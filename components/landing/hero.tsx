@@ -25,8 +25,7 @@ export function Hero() {
           backgroundSize: "cover",
           backgroundPosition: "center",
           opacity: 0.75,
-          borderBottomLeftRadius: "30px",
-          borderBottomRightRadius: "30px",
+       
         }}
       />
       {/* Header */}
