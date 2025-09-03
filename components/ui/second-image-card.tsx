@@ -21,7 +21,7 @@ export const PreviewImageCard = ({image , description}: {image: string, descript
       sm:px-[40px] sm:pt-[40px]  sm:pb-[30px]  py-3 flex flex-col items-center justify-center bg-[#181818] rounded-[15px] mt-auto">
       <img 
         src={image} alt="sustainable-first" />
-      <p className="text-[#BCBCBC] mt-[10px] sm:mt-[25px] text-[12px] sm:text-[16px] leading-[20px] sm:leading-[22px]">
+      <p className="text-[#BCBCBC] text-center mt-[10px] sm:mt-[25px] text-[12px] sm:text-[16px] leading-[20px] sm:leading-[22px]">
         {description}
       </p>
     </div>
