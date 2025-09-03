@@ -49,7 +49,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" type="image/png" href="/favicon.png?v=2" />
-        <link rel="preload" href="/logo.svg" as="image" type="image/svg+xml" />
+        <link rel="preload" href="/favicon.png" as="image" type="image/png" />
       </head>
 
       {/* ✅ Google Analytics Scripts */}
