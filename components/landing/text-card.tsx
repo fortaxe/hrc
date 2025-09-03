@@ -37,7 +37,20 @@ const TextCard = ({
       {thirdHeading && thirdDescription && (
         <div className="pt-[20px] sm:pt-[30px]">
           <p className="text-[16px] sm:text-[24px] leading-[1] tracking-[0em] text-[#F6F6EB]">{thirdHeading}</p>
-          <p className="description pt-[15px]">{thirdDescription}</p>
+          <p className="description pt-[15px]">
+            {thirdDescription
+              .split('.')
+              .map((sentence, idx, arr) =>
+                sentence.trim() !== ''
+                  ? (
+                      <span key={idx}>
+                        {sentence.trim() + '.'}
+                        {idx < arr.length - 1 && <><br /></>}
+                      </span>
+                    )
+                  : null
+              )}
+          </p>
         </div>
       )}
     </div>

@@ -1,21 +1,25 @@
 export const smartCards = [
   {
-    heading: "Hybrid Monocoque",
-    description:
-      "Hybrid construction using T700 12K highperformance carbon fiber (comprising nearly 80% of body volume) combined with steel and aluminum components",
-    secondHeading: "110 kg",
-    secondDescription: "Total carbon fiber usage of the whole vehicle",
-    thirdHeading: "30%",
-    thirdDescription: "Weight reduction compared to steelaluminum option",
-    img: "/smart/1.png"
-  },
+    "heading": "Hybrid Monocoque",
+    
+    "firstHeading": "Material",
+    "firstDescription": "Carbon Fiber composites, core material, steel and aluminium",
+    
+    "secondHeading": "Lightweight Index",
+    "secondDescription": "0.95",
+    
+    "thirdHeading": "Highlights:",
+    "thirdDescription": "Lightweight, solid, featuring multi-part integration, and more – this Hybrid Monocoque was joint-designed and manufactured by HRC. The primary component was made using an autoclave, combined with other parts integrating into the chamber via multi-joining techniques. Special designs targeting section structures ensure its overall performance.",
+    
+    "img": "/smart/1.png"
+  },  
   {
     heading: "Automotive Door Module",
     firstHeading: "Material",
     firstDescription: "CF Organosheet + PP-GF pellet",
     secondHeading: "Process",
     secondDescription: "Overmolding",
-    thirdHeading: "Highlights",
+    "thirdHeading": "Highlights:",
     thirdDescription:
       "One-step, fully automated molding, no secondary bonding required. Ultra-fast cycle times (as low as 3 minutes) with high product consistency",
     img: "/smart/2.png",
@@ -26,8 +30,8 @@ export const smartCards = [
     firstDescription: "C-SMC",
     secondHeading: "Process",
     secondDescription: "SMC molding",
-    thirdHeading: "Highlights",
-    thirdDescription: "Up to 45% weight reduction vs. sheet metal",
+    thirdHeading: "Highlights:",
+    thirdDescription: "Achieves upto 45% weight reduction compared totraditional sheet metal.Enhances structural performance with a 30% increase innatural frequency, improving durability and strength",
     img: "/smart/3.png",
   },
   {
@@ -63,7 +67,7 @@ export const styleCards = [
     secondDescription: "Autoclave",
     thirdHeading: "Highlights",
     thirdDescription:
-      "Lightweight construction decreases the vehicle’s centre of gravity, enhancing safety, driving comfort and on-track performance.",
+        "Designed for supercar with a sharp, tall, and streamlined aerodynamic diffuser fins. Distinctive carbon fabric textures enhance visual appeal and dynamic presence both in motion and at rest.",
     img: "/stylish/1.png",
   },
   {
@@ -74,7 +78,7 @@ export const styleCards = [
     secondDescription: "SMC molding",
     thirdHeading: "Highlights",
     thirdDescription:
-      "Lightweight, high-strength C-SMC tailgate with 25% weight saving vs. metal",
+      "Lightweight, high-strength C-SMC tailgate with 25% weight savings over traditional metal counterparts.Mass-produced by HRC with in-line bonding, assembly, and painting for a sleek , stylish design",
     img: "/stylish/2.png",
   },
   {
@@ -108,7 +112,7 @@ export const styleCards = [
     secondDescription: "Compression Molding + Overmolding + Open Pore",
     thirdHeading: "Highlights",
     thirdDescription:
-      "Lower cost, high efficiency, and recyclable with reduced pre-spraying time. High spray pass rate with carbon fiber texture and tactile finish.",
+      "Lower cost and higher molding efficiency compared to traditional thermosetting processes.Short production cycles with recyclable materials.Efficient PUR in-mold spraying ideal for automotive interior applications.",
     img: "/stylish/5.png",
   },
 ];
@@ -160,19 +164,19 @@ export const lightWeightCards = [
   {
     buttonName: "Sustainable",
     buttonLink: "/sustainable",
-    img: "/light-weight/1.svg",
+    img: "/light-weight/1.png",
     heading: "Ecosystem Solutions"
   },
   {
     buttonName: "Smart",
     buttonLink: "/smart",
-    img: "/light-weight/2.svg",
+    img: "/light-weight/2.png",
     heading: "Innovations in Lightweighting"
   },
   {
     buttonName: "Stylish",
     buttonLink: "/stylish",
-    img: "/light-weight/3.svg",
+    img: "/light-weight/3.png",
     heading: "Composites Excellence"
   }
 ];

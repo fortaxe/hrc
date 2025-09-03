@@ -12,7 +12,6 @@ export default function Home() {
       <div id="about-us">
         <AboutUs />
       </div>
-
       <LightWeightCards />
       <CardImage />
       <section className="pt-[50px] sm:pt-[140px] sm:not-first:pb-[70px] mx-auto max-w-[1536px]">
@@ -22,7 +21,6 @@ export default function Home() {
       <div id="contact">
         <ContactUs />
       </div>
-      
     </div>
   );
 }
