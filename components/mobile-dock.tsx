@@ -9,9 +9,9 @@ const MobileDock = () => {
   const pathname = usePathname();
 
   // Hide the dock on the home ("/") screen
-  if (pathname === "/") {
-    return null;
-  }
+  // if (pathname === "/") {
+  //   return null;
+  // }
 
   const navItems = [
     { label: "Sustainable", href: "/sustainable" },

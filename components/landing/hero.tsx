@@ -11,7 +11,7 @@ export function Hero() {
   return (
     <div
       data-hero
-      className="h-[700px] sm:h-screen w-full bg-black relative flex flex-col"
+      className="h-[400px] sm:h-screen w-full bg-black relative flex flex-col"
     >
       {/* Crimson Core Glow */}
       <div
@@ -49,7 +49,7 @@ export function Hero() {
             <div>
             
               <p className="text-[52px] md:text-[110px]  tracking-[-0.04em] leading-[52px] md:leading-[1] text-white text-center">
-              <span className="text-[#E1251B]">HRC</span> at IAA Mobility 2025 Hall B2, Booth E12
+              <span className="text-[#E1251B]">HRC</span> at IAA Mobility 2025  <br/><span className="text-2xl">Hall B2, Booth E12</span>
               </p>
             </div>
           </div>
@@ -60,10 +60,10 @@ export function Hero() {
                 <span className="">Advancing</span> Mobility Toward a Greener <span className="">Future</span> with Composite Innovation
               </p>
             </div>
-            <PrimaryButton
+            {/* <PrimaryButton
             name="About us"
             onClick={() => router.push("/#about-us")}
-            />
+            /> */}
             {/* <p className="description">
               HRC Group is one of the world’s leading composite solution providers. From R&D and engineering to tooling, mass production, and recycling, we deliver advanced carbon fiber solutions that drive sustainable, lightweight, and high-performance mobility.
             </p> */}

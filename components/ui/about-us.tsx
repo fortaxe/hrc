@@ -18,7 +18,7 @@ const AboutUs = () => {
       </p>
 
       <PrimaryButton
-        name="Contact us"
+        name="About us"
         onClick={() => router.push("/#contact")}
       />
 
