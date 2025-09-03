@@ -52,8 +52,7 @@ export const smartCards = [
     secondHeading: "Process",
     secondDescription: "SMC & Prepreg molding",
     thirdHeading: "Highlights",
-    thirdDescription:
-      "SMC separators provide local reinforcement for battery packs. Ensure reliable preload and stability within the battery assembly",
+    thirdDescription:"SMC separators provide local reinforcement for battery packs.Ensures reliable preload and stability within the battery assemblies",
     img: "/smart/5.png",
   },
 ];
@@ -116,8 +115,6 @@ export const styleCards = [
     img: "/stylish/5.png",
   },
 ];
-
-
 
 export const firstColumn = [
   {
