@@ -20,6 +20,7 @@ export interface TextCardProps {
 }
 
 export interface SmartCardProps {
+    id: string;
     heading: string;
     description?: string;
     firstHeading?: string;
@@ -29,7 +30,7 @@ export interface SmartCardProps {
     thirdHeading: string;
     thirdDescription: string;
     img: string;
-        }
+}
 
         export interface LightWeightCardProps {
             buttonName: string;

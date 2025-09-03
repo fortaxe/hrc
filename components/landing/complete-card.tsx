@@ -35,7 +35,11 @@ export const SmartCard = () => {
 
           <div className="space-y-6 pb-[30px]">
             {smartCards.map((card: SmartCardProps, i: number) => (
-              <motion.div className="bg-[#0E0E0E] p-4 rounded-[10px] flex flex-col gap-4 ">
+              <motion.div 
+                key={card.id}
+                id={card.id}
+                className="bg-[#0E0E0E] p-4 rounded-[10px] flex flex-col gap-4 "
+              >
                 <div className="flex ">
                   <TextCard {...card} />
                 </div>
@@ -63,7 +67,8 @@ export const SmartCard = () => {
         <div className="space-y-6 pb-[30px] sm:pb-[50px]">
           {smartCards.map((card: SmartCardProps, i: number) => (
             <div
-              key={i}
+              key={card.id}
+              id={card.id}
               className="bg-[#0E0E0E] p-4 sm:p-[30px] rounded-[10px] sm:rounded-[15px] flex flex-col lg:flex-row gap-4 sm:gap-[30px]"
             >
               <div className="lg:w-[50%] flex">
@@ -108,7 +113,11 @@ export const StyleCompleteCard = () => {
 
           <div className="space-y-6 pb-[30px]">
             {styleCards.map((card: SmartCardProps, i: number) => (
-              <motion.div className="bg-[#0E0E0E] p-4 rounded-[10px] flex flex-col gap-4">
+              <motion.div 
+                key={card.id}
+                id={card.id}
+                className="bg-[#0E0E0E] p-4 rounded-[10px] flex flex-col gap-4"
+              >
                 <div className="flex">
                   <TextCard {...card} />
                 </div>
@@ -136,7 +145,8 @@ export const StyleCompleteCard = () => {
         <div className="space-y-6 pb-[30px] sm:pb-[50px]">
           {styleCards.map((card: SmartCardProps, i: number) => (
             <div
-              key={i}
+              key={card.id}
+              id={card.id}
               className="bg-[#0E0E0E] p-4 sm:p-[30px] rounded-[10px] sm:rounded-[15px] flex flex-col lg:flex-row gap-4 sm:gap-[30px]"
             >
               <div className="lg:w-[50%] flex">

@@ -1,5 +1,6 @@
 export const smartCards = [
   {
+    "id": "hybrid-monocoque",
     "heading": "Hybrid Monocoque",
     
     "firstHeading": "Material",
@@ -14,6 +15,7 @@ export const smartCards = [
     "img": "/smart/1.png"
   },  
   {
+    "id": "automotive-door-module",
     heading: "Automotive Door Module",
     firstHeading: "Material",
     firstDescription: "CF Organosheet + PP-GF pellet",
@@ -25,6 +27,7 @@ export const smartCards = [
     img: "/smart/2.png",
   },
   {
+    "id": "smc-reinforcement",
     heading: "SMC Reinforcement",
     firstHeading: "Material",
     firstDescription: "C-SMC",
@@ -35,6 +38,7 @@ export const smartCards = [
     img: "/smart/3.png",
   },
   {
+    "id": "e-rotor-sleeve",
     heading: "E-ROTOR Sleeve",
     firstHeading: "Material",
     firstDescription: "CFRP+Resin",
@@ -46,6 +50,7 @@ export const smartCards = [
     img: "/smart/4.png",
   },
   {
+    "id": "battery-pack-separator",
     heading: "Battery Pack Separator",
     firstHeading: "Material",
     firstDescription: "CFRPA",
@@ -59,6 +64,7 @@ export const smartCards = [
 
 export const styleCards = [
   {
+    "id": "rear-bumper-lower-trim-panel",
     heading: "Rear Bumper Lower Trim Panel",
     firstHeading: "Material",
     firstDescription: "Carbon Fiber marbling Texture prepreg",
@@ -70,6 +76,7 @@ export const styleCards = [
     img: "/stylish/1.png",
   },
   {
+    "id": "smc-rear-tailgate",
     heading: "SMC Rear tailgate",
     firstHeading: "Material",
     firstDescription: "C-SMC",
@@ -81,6 +88,7 @@ export const styleCards = [
     img: "/stylish/2.png",
   },
   {
+    "id": "wheel-insert",
     heading: "Wheel Insert",
     firstHeading: "Material",
     firstDescription: "CFRP",
@@ -92,6 +100,7 @@ export const styleCards = [
     img: "/stylish/3.png",
   },
   {
+    "id": "cnsl-decoration",
     heading: "CNSL Decoration",
     firstHeading: "Material",
     firstDescription: "CFRTP + Plastic Particles",
@@ -104,6 +113,7 @@ export const styleCards = [
     img: "/stylish/4.png",
   },
   {
+    "id": "cnsl-decoration-2",
     heading: "CNSL Decoration",
     firstHeading: "Material",
     firstDescription: "CFRTP + Plastic Particles",
@@ -115,6 +125,7 @@ export const styleCards = [
     img: "/stylish/5.png",
   },
   {
+    "id": "backrest",
     heading: "Backrest",
     firstHeading: "Material",
     firstDescription: "CFRP",
@@ -126,6 +137,7 @@ export const styleCards = [
     img: "/stylish/6.png"
   },
   {
+    "id": "steering-wheel-decoration",
     heading: "Steering Wheel Decoration",
     firstHeading: "Material",
     firstDescription: "CFRP",
@@ -137,6 +149,7 @@ export const styleCards = [
     img: "/stylish/7.png"
   },
   {
+    "id": "rear-view-mirror",
     heading: "Rear View Mirror",
     firstHeading: "Material",
     firstDescription: "CFRP",
@@ -148,6 +161,7 @@ export const styleCards = [
     img: "/stylish/8.png"
   },
   {
+    "id": "streaming-mirror",
     heading: "Streaming Mirror",
     firstHeading: "Material",
     firstDescription: "CFRP",
