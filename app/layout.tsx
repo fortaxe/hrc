@@ -48,7 +48,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+        <link rel="icon" type="image/png" href="/favicon.png?v=2" />
         <link rel="preload" href="/logo.svg" as="image" type="image/svg+xml" />
       </head>
 
