@@ -114,6 +114,50 @@ export const styleCards = [
       "Lower cost and higher molding efficiency compared to traditional thermosetting processes.Short production cycles with recyclable materials.Efficient PUR in-mold spraying ideal for automotive interior applications.",
     img: "/stylish/5.png",
   },
+  {
+    heading: "Backrest",
+    firstHeading: "Material",
+    firstDescription: "CFRP",
+    secondHeading: "Process",
+    secondDescription: "Autoclave",
+    thirdHeading: "Highlights",
+    thirdDescription:
+      "The product is manufactured using high-strength carbon fiber prepreg and formed through an autoclave process, then bonded with plastic fasteners. It offers significant aesthetic value while reducing component weight. Additionally, it effectively absorbs impact energy during automotive collisions, substantially enhancing passenger safety.",
+    img: "/stylish/6.png"
+  },
+  {
+    heading: "Steering Wheel Decoration",
+    firstHeading: "Material",
+    firstDescription: "CFRP",
+    secondHeading: "Process",
+    secondDescription: "PCM",
+    thirdHeading: "Highlights",
+    thirdDescription:
+      "The product features an exquisite appearance and high dimensional accuracy. Meanwhile, the carbon fiber kit enhances visual appeal and improves the user experience. It offers excellent corrosion resistance, aging resistance, superior tactile feel, and outstanding thermal stability, enhancing the driver's sense of control.",
+    img: "/stylish/7.png"
+  },
+  {
+    heading: "Rear View Mirror",
+    firstHeading: "Material",
+    firstDescription: "CFRP",
+    secondHeading: "Process",
+    secondDescription: "Autoclave",
+    thirdHeading: "Highlights",
+    thirdDescription:
+      "Strength, rigidity, and impact resistance are enhanced; weather resistance is improved, and service life is extended.",
+    img: "/stylish/8.png"
+  },
+  {
+    heading: "Streaming Mirror",
+    firstHeading: "Material",
+    firstDescription: "CFRP",
+    secondHeading: "Process",
+    secondDescription: "Autoclave",
+    thirdHeading: "Highlights",
+    thirdDescription:
+      "Strength, rigidity, and impact resistance are enhanced; weather resistance is improved, and service life is extended.",
+    img: "/stylish/9.png"
+  },
 ];
 
 export const firstColumn = [

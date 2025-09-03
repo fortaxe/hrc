@@ -43,9 +43,8 @@ const TextCard = ({
               .map((sentence, idx, arr) =>
                 sentence.trim() !== ''
                   ? (
-                      <span key={idx}>
+                      <span key={idx} style={{ display: "block", marginBottom: idx < arr.length - 1 ? "10px" : "0" }}>
                         {sentence.trim() + '.'}
-                        {idx < arr.length - 1 && <><br /></>}
                       </span>
                     )
                   : null

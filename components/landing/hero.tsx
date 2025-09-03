@@ -45,16 +45,20 @@ export function Hero() {
           }}
           className="flex flex-col  max-w-[1440px] w-full text-center px-[16px] sm:px-[30px]"
         >
-          <div className="flex flex-col items-center max-w-[1200px] mx-auto justify-center text-center">
+          <div className="flex flex-col items-center max-w-[900px] mx-auto justify-center text-center">
             <div>
             
               <p className="text-[52px] md:text-[110px]  tracking-[-0.04em] leading-[52px] md:leading-[1] text-white text-center">
-              <span className="text-[#E1251B]">HRC</span> at IAA Mobility 2025  <br/><span className="text-2xl">Hall B2, Booth E12</span>
+              <span className="text-[#E1251B]">HRC</span> at IAA Mobility 2025  
+              <br/>
+            
               </p>
+            
             </div>
+            <span className="text-2xl mt-[15px] sm:mt-[30px] text-white tracking-[-0.01em]">Hall B2, Booth E12</span>
           </div>
           <div>
-            <div className="flex flex-col items-center sm:py-[30px] py-[20px]   text-center">
+            <div className="flex flex-col items-center sm:py-[10px] py-[15px]   text-center">
               <p className="description text-center">
                 
                 <span className="">Advancing</span> Mobility Toward a Greener <span className="">Future</span> with Composite Innovation

@@ -9,16 +9,16 @@ const Footer = () => {
       <div className="container px-4 sm:px-[30px]">
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center space-y-8 lg:space-y-0 p-4 sm:px-[30px] sm:pb-[261px] pb-[36px] sm:pt-[33px] ">
           {/* Logo */}
-          <div className="flex-shrink-0 pb-[50px] sm:pb-0">
+          <div className="flex-shrink-0 ">
             <img
               src="/logo.svg"
               alt="HRC"
-              className="w-[180px] h-[80px] sm:w-[250px] sm:h-[110px] md:w-[383px] md:h-[167.73px] "
+              className="w-[96px] h-[42px] sm:w-[250px] sm:h-[110px] md:w-[383px] md:h-[167.73px] "
             />
           </div>
 
           {/* Navigation Links */}
-          <div className="flex flex-wrap gap-[50px] sm:gap-[100px] ">
+          <div className="flex flex-wrap gap-[30px] sm:gap-[100px] ">
             {/* First Column */}
             <div className="space-y-3 ">
               {firstColumn.map((item) => (
