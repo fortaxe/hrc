@@ -35,11 +35,14 @@ const LightWeightCard = ({
       {/* Mobile Layout */}
       <div
         onClick={() => router.push(buttonLink)}
-        className="flex sm:hidden items-center justify-between w-full pr-2 bg-[#0E0E0E] rounded-[10px] border border-gray-600/30 cursor-pointer"
+        className="flex sm:hidden items-center justify-between w-full pr-4 bg-[#0E0E0E] rounded-[10px] border border-gray-600/30 cursor-pointer"
       >
         {/* Left side - Icon */}
-        <div className="flex items-center justify-center size-[72px] bg-[#1A1A1A] rounded-[8px]">
-          <img className="size-[24px]" src={img} alt={buttonName} />
+        <div className="flex items-center justify-center size-[72px] bg-[#1A1A1A] rounded-tl-[10px]
+        rounded-bl-[10px]">
+          <img 
+          className="size-[24px]" 
+          src={img} alt={buttonName} />
         </div>
         
         {/* Center - Text content */}
