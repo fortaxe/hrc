@@ -1,11 +1,11 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 import {
   SustainableFirst,
   SustainableSecond,
-  SustainableThird,
+
 } from "./sustainable-first";
 
 export const SustainableAnimated = () => {

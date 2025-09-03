@@ -6,7 +6,7 @@ const SecondImageCard = ({image , description}: {image: string, description: str
       <img 
     
       src={image} alt="sustainable-first" />
-      <p className="description mt-[10px] sm:mt-[25px] text-[#F6F6EB]!">
+      <p className="description mt-[10px] sm:mt-[25px] text-[#F6F6EB]! text-center">
         {description}
       </p>
     </div>

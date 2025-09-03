@@ -19,7 +19,7 @@ const AboutUs = () => {
 
       <PrimaryButton
         name="About us"
-        onClick={() => router.push("/#contact")}
+        onClick={() => window.open("https://www.grouphrc.com/about", "_blank")}
       />
 
       <img

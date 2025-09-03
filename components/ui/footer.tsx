@@ -30,7 +30,7 @@ const Footer = () => {
                   key={item.title}
                 >
                   {item.title}
-                </Link>
+                  </Link>
               ))}
             </div>
 
