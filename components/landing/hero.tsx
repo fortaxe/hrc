@@ -21,7 +21,7 @@ export function Hero() {
       <div
         className="absolute inset-0 z-0 pointer-events-none"
         style={{
-          backgroundImage: 'url("/hh.png")',
+          backgroundImage: 'url("/hero.png")',
           backgroundSize: "cover",
           backgroundPosition: "center",
           opacity: 0.75,
