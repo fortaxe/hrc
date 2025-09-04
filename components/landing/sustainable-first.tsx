@@ -34,7 +34,7 @@ export const SustainableFirst = () => {
           </div>
 
           {/* second column */}
-          <div className="flex flex-col lg:w-1/3 ">
+          <div className="sm:flex flex-col lg:w-1/3  hidden ">
             <p className="text-[24px] md:text-[30px] text-white leading-[1] tracking-[0] pt-5 sm:pt-0">
               HRC's "Waste-To-Product"
             </p>
@@ -50,7 +50,7 @@ export const SustainableFirst = () => {
           </div>
 
           {/* third column */}
-          <div className="flex flex-col lg:w-1/3 rounded-[10px] sm:rounded-[15px] bg-[#181818] ">
+          <div className="sm:flex flex-col lg:w-1/3 rounded-[10px] sm:rounded-[15px] bg-[#181818] hidden">
             <SustainableImageCard
               image="/sustainable/injection.png"
               description="Injection molding pellets"
@@ -84,7 +84,7 @@ export const SustainableSecond = () => {
           />
           <SecondImageCard
             image="/sustainable/front-bumper.png"
-            description="Front Bumper left lower air curtain plastic part"
+            description="Front bumper left lower air curtain plastic part"
           />
           <SecondImageCard
             image="/sustainable/Backrest upper rear decorative cover plastic part (2).png"
@@ -93,7 +93,7 @@ export const SustainableSecond = () => {
           />
           <SecondImageCard
             image="/sustainable/automotive.png"
-            description="Automotive underbody panels
+            description="Automotive underbody panel
 "
           />
         </div>
@@ -104,18 +104,31 @@ export const SustainableSecond = () => {
 
 export const SustainableThird = () => {
   return (
-    <div className="bg-[#0E0E0E] rounded-[10px] sm:rounded-[15px] mt-[30px] sm:my-[50px]">
-      <div className="flex flex-col lg:flex-row  justify-center p-4 sm:p-[30px]   gap-4 sm:gap-[30px]">
-        <SecondImageCard
-          image="/sustainable/front-bumper.png"
-          description="Front Bumper left lower air curtain plastic part"
-        />
-        <SecondImageCard
-          image="/sustainable/Backrest upper rear decorative cover plastic part (2).png"
-          description="Backrest upper rear decorative cover plastic part
-"
-        />
-      </div>
-    </div>
-  );
-};
+    <div className="bg-[#0E0E0E] rounded-[10px] sm:rounded-[15px] sm:hidden  gap-4 p-4 flex flex-col">
+    <div className="flex flex-col lg:w-1/3 sm:hidden ">
+    <p className="text-[24px] md:text-[30px] text-white leading-[1] tracking-[0]  sm:pt-0">
+      HRC's "Waste-To-Product"
+    </p>
+
+    <p className="text-[18px] md:text-[24px]  text-[#E1251B] leading-[1] tracking-[0] pt-[20px]  sm:pt-0 pb-[20px] sm:pb-0
+    sm:py-[30px]">
+      rCF Intermediate Material
+    </p>
+
+    <SustainableImageCard
+      image="/sustainable/Non woven fabric (1).png"
+      description="Non-woven fabric / TP felt"
+    />            
+  </div>
+
+  {/* third column */}
+  <div className="flex flex-col lg:w-1/3 rounded-[10px] sm:rounded-[15px] bg-[#181818] ">
+    <SustainableImageCard
+      image="/sustainable/injection.png"
+      description="Injection molding pellets"
+    />
+  </div>
+</div>
+  )
+  
+}

@@ -5,7 +5,7 @@ import { useRef, useState, useEffect } from "react";
 import {
   SustainableFirst,
   SustainableSecond,
-
+  SustainableThird,
 } from "./sustainable-first";
 
 export const SustainableAnimated = () => {
@@ -15,8 +15,9 @@ export const SustainableAnimated = () => {
   // Array of the three sustainable components
   const sustainableComponents = [
     { component: SustainableFirst, id: "sustainable-first" },
+    { component: SustainableThird, id: "sustainable-third" },
     { component: SustainableSecond, id: "sustainable-second" },
-    // { component: SustainableThird, id: "sustainable-third" },
+
   ];
 
   useEffect(() => {
