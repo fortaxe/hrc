@@ -72,7 +72,7 @@ export const styleCards = [
     secondDescription: "Autoclave",
     thirdHeading: "Highlights",
     thirdDescription:
-        "Designed for supercar from carbon fiber prepreg through autoclave molding, bonded into a single piece using a highperformance structural adhesive.It lowers vehicle's body weight, decrease its center of gravity, and improve vehicle handling stability, therefore- making the vehicle safer and more stable.",
+        "Designed for supercar from carbon fiber prepreg through autoclave molding, bonded into a single piece using a high-performance structural adhesive.It lowers vehicle's body weight, decrease its center of gravity, and improve vehicle handling stability, therefore- making the vehicle safer and more stable.",
     img: "/stylish/1.png",
   },
   {
