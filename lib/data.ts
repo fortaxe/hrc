@@ -39,7 +39,7 @@ export const smartCards = [
   },
   {
     "id": "e-rotor-sleeve",
-    heading: "E-ROTOR Sleeve",
+    heading: "E-Rotor Sleeve",
     firstHeading: "Material",
     firstDescription: "CFRP + Resin",
     secondHeading: "Process",

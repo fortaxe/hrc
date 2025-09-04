@@ -5,9 +5,24 @@ import React from "react";
 import Header from "./Header";
 import { useRouter } from "next/navigation";
 import PrimaryButton from "../buttons/primary-button";
+import { useState, useEffect } from "react";
 
 export function Hero() {
-  const router = useRouter();
+  const [bgImage, setBgImage] = useState('/hero.png');
+  
+  useEffect(() => {
+    const updateBg = () => {
+      if (window.innerWidth < 500) { // "sm" breakpoint is 640px in Tailwind
+        setBgImage('/mobile-hero.png');
+      } else {
+        setBgImage('/hero.png');
+      }
+    };
+    updateBg();
+    window.addEventListener('resize', updateBg);
+    return () => window.removeEventListener('resize', updateBg);
+  }, []);
+
   return (
     <div
       data-hero

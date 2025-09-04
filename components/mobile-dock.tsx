@@ -14,6 +14,7 @@ const MobileDock = () => {
   // }
 
   const navItems = [
+    {label: "Home", href: "/"},
     { label: "Sustainable", href: "/sustainable" },
     { label: "Smart", href: "/smart" },
     { label: "Stylish", href: "/stylish" },
@@ -25,7 +26,7 @@ const MobileDock = () => {
         initial={{ y: 100 }}
         animate={{ y: 0 }}
         transition={{ type: "spring", stiffness: 300, damping: 30 }}
-        className="mx-4 mb-4 p-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full"
+        className="mx-4 mb-4 p-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full"
       >
         <div className="flex items-center justify-between">
           {navItems.map((item) => {
@@ -35,7 +36,7 @@ const MobileDock = () => {
                 key={item.label}
                 onClick={() => router.push(item.href)}
                 whileTap={{ scale: 0.95 }}
-                className={`px-4 py-2 rounded-full text-sm  transition-all duration-200 ${
+                className={`px-3 py-2 rounded-full text-sm  transition-all duration-200 ${
                   isActive
                     ? "bg-[#141414] text-[#BCBCBC] shadow-lg"
                     : "text-white hover:bg-white/10"
