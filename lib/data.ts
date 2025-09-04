@@ -116,7 +116,7 @@ export const styleCards = [
     "id": "cnsl-decoration-2",
     heading: "CNSL Decoration - B",
     firstHeading: "Material",
-    firstDescription: "CFRTP + Plastic ParticlesCompression molding + Overmolding + Open pore",
+    firstDescription: "Compression molding + Overmolding + Open pore",
     secondHeading: "Process",
     secondDescription: "Compression Molding + Overmolding + Open Pore",
     thirdHeading: "Highlights",
