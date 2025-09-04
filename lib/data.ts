@@ -4,7 +4,7 @@ export const smartCards = [
     "heading": "Hybrid Monocoque",
     
     "firstHeading": "Material",
-    "firstDescription": "Carbon Fiber composites, core material, steel and aluminium",
+    "firstDescription": "Carbon fiber composites, core material, steel and aluminium",
     
     "secondHeading": "Lightweight Index",
     "secondDescription": "0.95",
