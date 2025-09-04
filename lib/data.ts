@@ -34,7 +34,7 @@ export const smartCards = [
     secondHeading: "Process",
     secondDescription: "SMC molding",
     thirdHeading: "Highlights",
-    thirdDescription: "Achieves upto 45% weight reduction compared to traditional sheet metal.Enhances structural performance with a significant higher first natural frequency, improving durability,stiffness and strength.",
+    thirdDescription: "Achieves upto 45% weight reduction compared to traditional sheet metal.Enhances structural performance with a significant higher first natural frequency, improving durability, stiffness and strength.",
     img: "/smart/3.png",
   },
   {
