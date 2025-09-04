@@ -51,7 +51,7 @@ const ContactUs = () => {
             </p>
             <p className="description max-w-[493px]" >
               Interested in specific product? Please indicate the subject of your 
-              inquiry to be forwarded to. This will help us process your request 
+              inquiry to be forwarded accordingly. This will help us process your request 
               more quickly.
             </p>
           </div>
