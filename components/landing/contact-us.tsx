@@ -216,7 +216,7 @@ const ContactUs = () => {
                   {...register("subject", {
                     required: "Subject is required",
                     minLength: {
-                      value: 10,
+                      value: 4,
                       message: "Subject must be at least 10 characters",
                     },
                   })}
