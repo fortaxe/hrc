@@ -4,7 +4,7 @@ import "./globals.css";
 import Script from "next/script";
 import Footer from "@/components/ui/footer";
 import ConditionalHeader from "@/components/landing/ConditionalHeader";
-
+import { Toaster } from "@/components/ui/sonner";
 import MobileDock from "@/components/mobile-dock";
 
 const geistSans = Poppins({
@@ -86,6 +86,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <MobileDock />
+        <Toaster />
       </body>
     </html>
   );
