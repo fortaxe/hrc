@@ -62,7 +62,20 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-4E19TXZN9N');
+            gtag('config', 'G-4E19TXZN9N', {
+              page_title: document.title,
+              page_location: window.location.href,
+              send_page_view: true
+            });
+            
+            // Debug: Log when gtag is loaded
+            console.log('Google Analytics loaded with ID: G-4E19TXZN9N');
+            
+            // Send a test event
+            gtag('event', 'page_view', {
+              page_title: document.title,
+              page_location: window.location.href
+            });
           `}
       </Script>
       <Script
